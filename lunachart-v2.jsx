@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="LunaChart — A privacy-first Justisse Method fertility awareness tracker. Learn to read your body's fertility signals with science-backed education.">
-  <meta name="theme-color" content="#FDFAF6">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <title>LunaChart — Fertility Awareness Tracker</title>
-</head>
-<body style="margin:0;padding:0">
-  <div id="root"></div>
-
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-  <script type="text/babel">
-// ─── localStorage polyfill for window.storage API ───
-if (!window.storage) {
-  window.storage = {
-    get: async (k) => { const v = localStorage.getItem(k); return v ? { value: v } : null; },
-    set: async (k, v) => { localStorage.setItem(k, v); },
-  };
-}
-
-// ─── React hooks from global React ───
-const { useState, useEffect, useRef } = React;
-
+import { useState, useEffect, useRef } from "react";
 
 /* ═══════════════════════════════════════════════
    LUNACHART — Justisse Method Fertility Tracker
@@ -806,7 +777,7 @@ const SAMPLE = {
 // ──────────────────────────────────────────────
 // MAIN APP COMPONENT
 // ──────────────────────────────────────────────
-function LunaChart() {
+export default function LunaChart() {
   const [page, setPage] = useState("landing");
   const [entries, setEntries] = useState(SAMPLE);
   const [curDate, setCurDate] = useState(td());
@@ -1702,10 +1673,3 @@ function Article({a,setPage}) {
     </div>
   </div>;
 }
-
-// ─── Mount the app ───
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(React.createElement(LunaChart));
-  </script>
-</body>
-</html>
