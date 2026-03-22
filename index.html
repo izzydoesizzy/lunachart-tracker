@@ -7,6 +7,8 @@
   <meta name="theme-color" content="#FDFAF6">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <title>LunaChart — Fertility Awareness Tracker</title>
 </head>
 <body style="margin:0;padding:0">
@@ -1706,6 +1708,11 @@ function Article({a,setPage}) {
 // ─── Mount the app ───
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(React.createElement(LunaChart));
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
   </script>
 </body>
 </html>
