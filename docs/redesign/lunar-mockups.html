@@ -1,6 +1,7 @@
-<title>LunaChart — Lunar Redesign Mockups</title>
+<meta charset="utf-8">
+<title>LunaChart &#8212; Lunar Redesign Mockups</title>
 <style>
-/* ══════════ TOKENS — dark "Lunar night" is the base theme ══════════ */
+/* ========== TOKENS &#8212; dark "Lunar night" is the base theme ========== */
 :root{
   --pg:#0B0D1E; --pg-2:#101226; --pg-ink:#E9EAF7; --pg-ink2:#A2A5CB; --pg-line:rgba(169,164,242,.14);
   --bg:#12142B; --sur:#1A1D3A; --sur2:#232750; --line:rgba(169,164,242,.16);
@@ -51,7 +52,7 @@
   --shadow:0 20px 50px rgba(35,36,74,.18);
 }
 
-/* ══════════ SHOWCASE PAGE ══════════ */
+/* ========== SHOWCASE PAGE ========== */
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--pg);color:var(--pg-ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased}
@@ -124,7 +125,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .ex-try{margin-top:14px;font-size:12px;color:var(--pg-ink2);border-left:2px solid var(--acc);padding:2px 0 2px 10px}
 .ex-stage{display:flex;justify-content:center;gap:34px;flex-wrap:wrap}
 
-/* ══════════ PHONE CHROME ══════════ */
+/* ========== PHONE CHROME ========== */
 .pwrap{flex:0 0 auto}
 .phone{width:393px;height:852px;background:var(--bg);border-radius:54px;position:relative;overflow:hidden;
   box-shadow:0 0 0 11px var(--bezel),0 0 0 13px var(--bezel2),var(--shadow);
@@ -146,7 +147,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .ptab button svg{width:23px;height:23px}
 .ptab button.on{color:var(--acc)}
 
-/* ══════════ IN-PHONE COMPONENTS ══════════ */
+/* ========== IN-PHONE COMPONENTS ========== */
 .pv{padding:0 20px}
 .ltitle{font-size:31px;font-weight:800;letter-spacing:-.7px;line-height:1.1}
 .lsub{font-size:14px;color:var(--ink2);margin-top:3px}
@@ -318,7 +319,7 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
 }
 </style>
 
-<!-- ══════════ SVG SYMBOLS ══════════ -->
+<!-- ========== SVG SYMBOLS ========== -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-moon" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13.2A8.6 8.6 0 0 1 10.8 3 8.9 8.9 0 1 0 21 13.2z"/></symbol>
@@ -350,7 +351,7 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
   </defs>
 </svg>
 
-<!-- ══════════ TEMPLATES (cloned into every frame by JS) ══════════ -->
+<!-- ========== TEMPLATES (cloned into every frame by JS) ========== -->
 <template id="tpl-status">
   <div class="island"></div>
   <div class="pstatus"><b>9:41</b><span class="sicons"><svg viewBox="0 0 18 12"><use href="#i-sig"/></svg><svg viewBox="0 0 17 12"><use href="#i-wifi"/></svg><svg viewBox="0 0 27 13"><use href="#i-batt"/></svg></span></div>
@@ -366,10 +367,10 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
   </nav>
 </template>
 
-<!-- ══════════ HEADER ══════════ -->
+<!-- ========== HEADER ========== -->
 <header class="x-head">
   <div class="x-wrap x-head-in">
-    <span class="x-mark"><svg class="moon"><use href="#i-moon"/></svg>LunaChart&nbsp;<small>· Lunar redesign</small></span>
+    <span class="x-mark"><svg class="moon"><use href="#i-moon"/></svg>LunaChart&nbsp;<small>&#183; Lunar redesign</small></span>
     <nav class="x-nav" aria-label="Sections">
       <a href="#foundations">Foundations</a><a href="#ex-today">Core app</a><a href="#ex-learn">Learn</a><a href="#ex-firstcycle">New concepts</a><a href="#themes">Themes</a>
     </nav>
@@ -380,48 +381,48 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
   </div>
 </header>
 
-<!-- ══════════ HERO ══════════ -->
+<!-- ========== HERO ========== -->
 <section class="x-hero">
   <svg class="heromoon" aria-hidden="true"><use href="#i-moon"/></svg>
   <div class="x-wrap">
-    <p class="x-eyebrow">Redesign proposal · 12 screens · light + dark</p>
+    <p class="x-eyebrow">Redesign proposal &#183; 12 screens &#183; light + dark</p>
     <h1>The moon was in the name <em>all along.</em></h1>
-    <p>A complete visual reinvention of LunaChart as a modern iOS app. The philosophy is untouched — <strong>the app never interprets your chart; you do</strong> — but the software finally earns it: moon phases become the mucus-stamp language, the chart becomes a real FAM chart, lessons become practice, and the whole thing works beautifully at 6&nbsp;a.m. in the dark. Every screen caption cites the audit findings it addresses.</p>
+    <p>A complete visual reinvention of LunaChart as a modern iOS app. The philosophy is untouched &#8212; <strong>the app never interprets your chart; you do</strong> &#8212; but the software finally earns it: moon phases become the mucus-stamp language, the chart becomes a real FAM chart, lessons become practice, and the whole thing works beautifully at 6&nbsp;a.m. in the dark. Every screen caption cites the audit findings it addresses.</p>
     <div class="x-principles">
-      <span>No fertility verdicts, ever</span><span>Moon phases = mucus stamps</span><span>SF system type · New York serif accent</span><span>Dark is the hero theme</span><span>44&nbsp;pt targets · AA contrast</span><span>Local-only, with export</span>
+      <span>No fertility verdicts, ever</span><span>Moon phases = mucus stamps</span><span>SF system type &#183; New York serif accent</span><span>Dark is the hero theme</span><span>44&nbsp;pt targets &#183; AA contrast</span><span>Local-only, with export</span>
     </div>
   </div>
 </section>
 
-<!-- ══════════ FOUNDATIONS ══════════ -->
+<!-- ========== FOUNDATIONS ========== -->
 <section class="x-sect" id="foundations">
   <div class="x-wrap">
     <h2>Foundations <small>Design tokens</small></h2>
-    <p>Everything below is rendered from the live CSS custom properties — what you see is the actual system, in whichever theme you've picked above.</p>
+    <p>Everything below is rendered from the live CSS custom properties &#8212; what you see is the actual system, in whichever theme you've picked above.</p>
     <div class="f-grid">
-      <div class="f-card"><h3>Palette · night &amp; day</h3>
+      <div class="f-card"><h3>Palette &#183; night &amp; day</h3>
         <div class="f-sw">
           <div><i style="background:var(--bg)"></i><b>Ground</b><s>bg</s></div>
           <div><i style="background:var(--sur)"></i><b>Surface</b><s>sur</s></div>
           <div><i style="background:var(--acc)"></i><b>Moonstone</b><s>accent</s></div>
-          <div><i style="background:var(--coral)"></i><b>Coral</b><s>menses·peak</s></div>
+          <div><i style="background:var(--coral)"></i><b>Coral</b><s>menses&#183;peak</s></div>
           <div><i style="background:var(--m-peak)"></i><b>Peak aqua</b><s>fertile end</s></div>
           <div><i style="background:var(--ok)"></i><b>Confirm</b><s>ok</s></div>
         </div>
       </div>
-      <div class="f-card"><h3>Type · SF + New York</h3>
+      <div class="f-card"><h3>Type &#183; SF + New York</h3>
         <div class="f-type">
           <div><b style="font-size:26px;font-weight:800;letter-spacing:-.6px">Large title</b><s>SF 31/800</s></div>
-          <div><b style="font-size:16px;font-weight:700">Headline</b><s>SF 15–16/700</s></div>
-          <div><b style="font-size:14px;font-weight:400;color:var(--pg-ink2)">Body &amp; captions</b><s>SF 13–15/400</s></div>
+          <div><b style="font-size:16px;font-weight:700">Headline</b><s>SF 15&#8211;16/700</s></div>
+          <div><b style="font-size:14px;font-weight:400;color:var(--pg-ink2)">Body &amp; captions</b><s>SF 13&#8211;15/400</s></div>
           <div><b class="serif" style="font-size:19px;font-weight:700">Learn &amp; Library voice</b><s>New York serif</s></div>
         </div>
       </div>
       <div class="f-card"><h3>Moon stamps = mucus quality</h3>
         <div class="f-stamps">
           <figure><svg style="color:var(--m-dry)"><use href="#m-new"/></svg><figcaption>New moon<br>Dry</figcaption></figure>
-          <figure><svg style="color:var(--m-moist)"><use href="#m-cres"/></svg><figcaption>Crescent<br>Moist · tacky</figcaption></figure>
-          <figure><svg style="color:var(--m-wet)"><use href="#m-half"/></svg><figcaption>Half<br>Wet · creamy</figcaption></figure>
+          <figure><svg style="color:var(--m-moist)"><use href="#m-cres"/></svg><figcaption>Crescent<br>Moist &#183; tacky</figcaption></figure>
+          <figure><svg style="color:var(--m-wet)"><use href="#m-half"/></svg><figcaption>Half<br>Wet &#183; creamy</figcaption></figure>
           <figure><svg style="color:var(--m-peak)"><use href="#m-full"/></svg><figcaption>Full moon<br>Peak quality</figcaption></figure>
           <figure><svg style="color:var(--blood)"><use href="#i-drop"/></svg><figcaption>Drop<br>Bleeding</figcaption></figure>
         </div>
@@ -430,24 +431,24 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
         <div class="f-comp" style="color:var(--ink)">
           <span class="chip on" style="cursor:default">Egg-white</span>
           <div class="seg" style="width:100%;max-width:230px;margin-top:0"><button class="on" style="cursor:default">Low</button><button style="cursor:default">Mid</button><button style="cursor:default">High</button></div>
-          <span style="font-size:11px;color:var(--pg-ink2)">Chips, segmented controls, toggle rows, grouped cards — all ≥ 40&nbsp;px tall with 44&nbsp;px hit areas.</span>
+          <span style="font-size:11px;color:var(--pg-ink2)">Chips, segmented controls, toggle rows, grouped cards &#8212; all &#8805; 40&nbsp;px tall with 44&nbsp;px hit areas.</span>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- ══════════ 01 · TODAY ══════════ -->
+<!-- ========== 01 &#183; TODAY ========== -->
 <section class="exhibit" id="ex-today">
   <div class="x-wrap ex-grid">
     <div class="ex-cap">
       <p class="ex-num">01</p>
-      <h3>Today — observations, never verdicts</h3>
-      <p>The daily screen is rebuilt around one rule: <strong>the banner mirrors back what you recorded — it never tells you what it means.</strong> Peak Day and Point of Change become deliberate acts: marking Peak opens a confirm sheet restating the definition, then starts <em>your</em> 4-day count. Grouped cards keep every biomarker visible with summary rows; nothing collapses anything else.</p>
+      <h3>Today &#8212; observations, never verdicts</h3>
+      <p>The daily screen is rebuilt around one rule: <strong>the banner mirrors back what you recorded &#8212; it never tells you what it means.</strong> Peak Day and Point of Change become deliberate acts: marking Peak opens a confirm sheet restating the definition, then starts <em>your</em> 4-day count. Grouped cards keep every biomarker visible with summary rows; nothing collapses anything else.</p>
       <ul>
         <li>Moon-phase badge shows the cycle day, not a prediction</li>
         <li>All-visible grouped cards replace one-at-a-time accordions</li>
-        <li>Instant save keeps its speed — and gains "Saved · Undo"</li>
-        <li>Every control ≥ 44 pt; real headings; AA contrast</li>
+        <li>Instant save keeps its speed &#8212; and gains "Saved &#183; Undo"</li>
+        <li>Every control &#8805; 44 pt; real headings; AA contrast</li>
       </ul>
       <div class="ex-fix"><span class="lead">Addresses</span><span>P-1</span><span>P-5</span><span>U-3</span><span>U-4</span><span>U-5</span><span>A-3</span><span>A-4</span><span>A-6</span></div>
       <p class="ex-try">Try it: tap <strong>Peak Day</strong> to see the confirm moment, tap chips and segments, and flip the Night/Day toggle up top.</p>
@@ -462,8 +463,8 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
 
           <div class="card" style="border-color:var(--acc);background:linear-gradient(135deg,var(--acc-soft),var(--sur))">
             <p class="klabel" style="color:var(--acc)">Your observations so far</p>
-            <p style="font-size:15px;font-weight:600;margin-top:6px">Slippery sensation · egg-white · 3+ cm stretch</p>
-            <p style="font-size:12.5px;color:var(--ink2);margin-top:4px">That's what you logged. What it means is your call — you haven't marked anything today.</p>
+            <p style="font-size:15px;font-weight:600;margin-top:6px">Slippery sensation &#183; egg-white &#183; 3+ cm stretch</p>
+            <p style="font-size:12.5px;color:var(--ink2);margin-top:4px">That's what you logged. What it means is your call &#8212; you haven't marked anything today.</p>
           </div>
 
           <button class="pill-lg" id="peak-row">
@@ -491,7 +492,7 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
           <div class="card">
             <button class="mrow" data-goto="ex-sheet" style="padding:0;min-height:56px">
               <span class="ic" style="background:var(--acc-soft);color:var(--m-peak)"><svg style="width:20px;height:20px"><use href="#m-full"/></svg></span>
-              <span style="flex:1"><b>Cervical mucus</b><small>Slippery · egg-white · 3+ cm — tap to review</small></span>
+              <span style="flex:1"><b>Cervical mucus</b><small>Slippery &#183; egg-white &#183; 3+ cm &#8212; tap to review</small></span>
               <svg class="chev" style="width:18px;height:18px"><use href="#i-chev"/></svg>
             </button>
           </div>
@@ -500,9 +501,9 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
             <div class="crow"><h4>Temperature</h4><button class="chip" id="dist-chip" style="min-height:34px;padding:6px 12px">Disturbed</button></div>
             <div style="display:flex;gap:10px;margin-top:10px;align-items:center">
               <input class="pfield" value="36.25" inputmode="decimal" aria-label="Basal body temperature in Celsius" style="flex:1;font-variant-numeric:tabular-nums">
-              <span style="font-size:14px;color:var(--ink2);font-weight:600">°C</span>
+              <span style="font-size:14px;color:var(--ink2);font-weight:600">&#176;C</span>
             </div>
-            <p style="font-size:11.5px;color:var(--ink3);margin-top:8px">Before rising · same time daily · 3 min hold</p>
+            <p style="font-size:11.5px;color:var(--ink3);margin-top:8px">Before rising &#183; same time daily &#183; 3 min hold</p>
           </div>
 
           <div class="card">
@@ -517,7 +518,7 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
 
           <div class="card">
             <h4>Notes</h4>
-            <input class="pfield" style="margin-top:10px" value="Slept badly — flagging for my practitioner." aria-label="Notes">
+            <input class="pfield" style="margin-top:10px" value="Slept badly &#8212; flagging for my practitioner." aria-label="Notes">
           </div>
         </div>
       </div>
@@ -525,7 +526,7 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
       <div class="confirm" id="peak-confirm">
         <div class="box">
           <h5>Mark today as Peak Day?</h5>
-          <p><strong style="color:var(--ink)">Peak Day is the <em>last</em> day of peak-quality mucus</strong> — you usually recognise it the day after, when quality drops. Marking it starts your own 4-day count.</p>
+          <p><strong style="color:var(--ink)">Peak Day is the <em>last</em> day of peak-quality mucus</strong> &#8212; you usually recognise it the day after, when quality drops. Marking it starts your own 4-day count.</p>
           <div class="acts">
             <button class="btn-a" id="peak-yes" style="background:var(--coral);color:#fff">Mark Peak Day</button>
             <button class="btn-g" id="peak-no" style="background:var(--sur2);color:var(--ink2)">Not yet</button>
@@ -536,20 +537,20 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
   </div>
 </section>
 
-<!-- ══════════ 02 · MUCUS SHEET ══════════ -->
+<!-- ========== 02 &#183; MUCUS SHEET ========== -->
 <section class="exhibit" id="ex-sheet">
   <div class="x-wrap ex-grid">
     <div class="ex-cap">
       <p class="ex-num">02</p>
       <h3>Logging as a focused sheet</h3>
-      <p>Each biomarker opens a bottom sheet instead of an accordion — the iOS-native gesture for a quick, focused task. The three Justisse qualities get <strong>big descriptive rows</strong> (name + what it actually feels like), the "record your most fertile observation of the day" rule rides along as a tip, and beginners get a one-tap path into the 5-minute lesson.</p>
+      <p>Each biomarker opens a bottom sheet instead of an accordion &#8212; the iOS-native gesture for a quick, focused task. The three Justisse qualities get <strong>big descriptive rows</strong> (name + what it actually feels like), the "record your most fertile observation of the day" rule rides along as a tip, and beginners get a one-tap path into the 5-minute lesson.</p>
       <ul>
-        <li>Spring-in sheet with grabber and scrim — the signature interaction</li>
+        <li>Spring-in sheet with grabber and scrim &#8212; the signature interaction</li>
         <li>Full option descriptions replace bare two-letter codes</li>
         <li>Contextual education stays, better dressed</li>
       </ul>
       <div class="ex-fix"><span class="lead">Addresses</span><span>U-4</span><span>P-3</span><span>A-2</span><span>A-4</span></div>
-      <p class="ex-try">Try it: close the sheet with ✕ or the scrim, then reopen it from the mucus row.</p>
+      <p class="ex-try">Try it: close the sheet with &#10005; or the scrim, then reopen it from the mucus row.</p>
     </div>
     <div class="ex-stage"><div class="pwrap"><div class="phone sheet-open" data-active-tab="today" id="sheet-phone">
       <div class="screen noscroll" aria-hidden="true">
@@ -558,9 +559,9 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
             <div><h2 class="ltitle">Today</h2><p class="lsub">Saturday, February 28</p></div>
             <div class="moonbadge"><svg><use href="#m-gib"/></svg><span><b>Cycle Day 14</b><small>Cycle 5</small></span></div>
           </div>
-          <div class="card"><p class="klabel" style="color:var(--acc)">Your observations so far</p><p style="font-size:15px;font-weight:600;margin-top:6px">Slippery sensation · egg-white · 3+ cm</p></div>
+          <div class="card"><p class="klabel" style="color:var(--acc)">Your observations so far</p><p style="font-size:15px;font-weight:600;margin-top:6px">Slippery sensation &#183; egg-white &#183; 3+ cm</p></div>
           <div class="card"><div class="crow"><h4>Bleeding</h4><span class="sum">None</span></div></div>
-          <div class="card"><div class="crow"><h4>Temperature</h4><span class="sum">36.25 °C</span></div></div>
+          <div class="card"><div class="crow"><h4>Temperature</h4><span class="sum">36.25 &#176;C</span></div></div>
         </div>
       </div>
       <div class="scrim" data-sheet-close></div>
@@ -568,22 +569,22 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
         <div class="grab"></div>
         <div class="crow">
           <div><h4 style="font-size:19px;font-weight:800">Cervical mucus</h4><p style="font-size:12px;color:var(--ink2)">Record the most fertile observation of your whole day</p></div>
-          <button class="chip" data-sheet-close style="min-height:34px;padding:6px 12px" aria-label="Close">✕</button>
+          <button class="chip" data-sheet-close style="min-height:34px;padding:6px 12px" aria-label="Close">&#10005;</button>
         </div>
-        <p class="klabel" style="margin-top:16px">Sensation — what you felt</p>
+        <p class="klabel" style="margin-top:16px">Sensation &#8212; what you felt</p>
         <div data-choice-group>
           <button class="mrow"><span class="ic" style="background:var(--sur2);color:var(--m-dry)"><svg style="width:19px;height:19px"><use href="#m-new"/></svg></span><span><b>Dry</b><small>No moisture; tissue drags</small></span></button>
           <button class="mrow"><span class="ic" style="background:var(--sur2);color:var(--m-moist)"><svg style="width:19px;height:19px"><use href="#m-cres"/></svg></span><span><b>Moist</b><small>Slight dampness</small></span></button>
           <button class="mrow"><span class="ic" style="background:var(--sur2);color:var(--m-wet)"><svg style="width:19px;height:19px"><use href="#m-half"/></svg></span><span><b>Wet</b><small>Distinct wetness</small></span></button>
-          <button class="mrow on" style="background:var(--acc-soft)"><span class="ic" style="background:var(--sur2);color:var(--m-peak)"><svg style="width:19px;height:19px"><use href="#m-full"/></svg></span><span><b>Slippery</b><small>Lubricative — tissue glides. Peak-quality sensation</small></span><svg class="chev" style="width:18px;height:18px;color:var(--acc)"><use href="#i-check"/></svg></button>
+          <button class="mrow on" style="background:var(--acc-soft)"><span class="ic" style="background:var(--sur2);color:var(--m-peak)"><svg style="width:19px;height:19px"><use href="#m-full"/></svg></span><span><b>Slippery</b><small>Lubricative &#8212; tissue glides. Peak-quality sensation</small></span><svg class="chev" style="width:18px;height:18px;color:var(--acc)"><use href="#i-check"/></svg></button>
         </div>
-        <p class="klabel" style="margin-top:16px">Appearance — what you saw</p>
+        <p class="klabel" style="margin-top:16px">Appearance &#8212; what you saw</p>
         <div class="chips" data-choice-group>
           <button class="chip">Nothing</button><button class="chip">Cell slough</button><button class="chip">Tacky</button><button class="chip">Creamy</button><button class="chip">Clear</button><button class="chip on">Egg-white</button><button class="chip">Watery</button>
         </div>
-        <p class="klabel" style="margin-top:16px">Stretch — finger test</p>
+        <p class="klabel" style="margin-top:16px">Stretch &#8212; finger test</p>
         <div class="chips" data-choice-group>
-          <button class="chip">None</button><button class="chip">Breaks</button><button class="chip">&lt; 1 cm</button><button class="chip">1–3 cm</button><button class="chip on">3+ cm</button>
+          <button class="chip">None</button><button class="chip">Breaks</button><button class="chip">&lt; 1 cm</button><button class="chip">1&#8211;3 cm</button><button class="chip on">3+ cm</button>
         </div>
         <div class="note"><svg><use href="#i-book"/></svg><p><strong>New to mucus observation?</strong> The 5-minute lesson shows you exactly what each of these looks and feels like.</p></div>
         <button class="btn-a" style="margin-top:14px" data-sheet-close>Done</button>
@@ -592,18 +593,18 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
   </div>
 </section>
 
-<!-- ══════════ 03 · CHART ══════════ -->
+<!-- ========== 03 &#183; CHART ========== -->
 <section class="exhibit" id="ex-chart">
   <div class="x-wrap ex-grid">
     <div class="ex-cap">
       <p class="ex-num">03</p>
       <h3>A chart that looks like a FAM chart</h3>
-      <p>Temperature and mucus finally share aligned columns — the classic paper-chart anatomy, digitized. The mucus row uses the <strong>moon-stamp language</strong> (new moon dry → full moon peak), so the sympto-thermal double-check is <em>visible</em>: the full moons end exactly where the temperatures step up. The coverline is <strong>drawn by you</strong>, with the rule quoted beside it — on the worked example it comes pre-drawn.</p>
+      <p>Temperature and mucus finally share aligned columns &#8212; the classic paper-chart anatomy, digitized. The mucus row uses the <strong>moon-stamp language</strong> (new moon dry &#8594; full moon peak), so the sympto-thermal double-check is <em>visible</em>: the full moons end exactly where the temperatures step up. The coverline is <strong>drawn by you</strong>, with the rule quoted beside it &#8212; on the worked example it comes pre-drawn.</p>
       <ul>
-        <li>Tap any day — the detail panel updates below</li>
+        <li>Tap any day &#8212; the detail panel updates below</li>
         <li>Disturbed temps are open circles, excluded by <em>you</em></li>
         <li>Cycle picker replaces the single 34-day window</li>
-        <li>Shown force-set to Night — the 6 a.m. thermometer context</li>
+        <li>Shown force-set to Night &#8212; the 6 a.m. thermometer context</li>
       </ul>
       <div class="ex-fix"><span class="lead">Addresses</span><span>P-2</span><span>P-4</span><span>V-3</span><span>U-6</span><span>A-5</span><span>A-7</span></div>
       <p class="ex-try">Try it: tap the day columns. Feb 24 is the Point of Change; Mar 1 is Peak Day.</p>
@@ -612,7 +613,7 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
       <div class="screen">
         <div class="pv">
           <div class="crow">
-            <div><h2 class="ltitle">Chart</h2><p class="lsub">Cycle 5 · Feb 15 – Mar 15 · worked example</p></div>
+            <div><h2 class="ltitle">Chart</h2><p class="lsub">Cycle 5 &#183; Feb 15 &#8211; Mar 15 &#183; worked example</p></div>
           </div>
           <div class="seg" style="max-width:240px" data-choice-group>
             <button>Cycle 3</button><button>Cycle 4</button><button class="on">Cycle 5</button>
@@ -621,19 +622,19 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
             <div class="chart-scroll" id="chart-holder" aria-label="Cycle 5 chart: temperatures rise above your coverline on March 2, three days after Peak Day on March 1" role="img"></div>
             <div class="legend" style="padding:0 8px">
               <span><i style="background:var(--acc)"></i>BBT</span>
-              <span style="color:var(--coral)">┅ Your coverline</span>
+              <span style="color:var(--coral)">&#9477; Your coverline</span>
               <span><svg style="width:12px;height:12px;color:var(--coral)"><use href="#i-star"/></svg>Peak (yours)</span>
               <span><i style="border:2px solid var(--ink3);background:transparent"></i>Disturbed</span>
             </div>
           </div>
-          <div class="note"><svg><use href="#i-up"/></svg><p><strong>Your coverline.</strong> Drag it 0.05 °C above the highest of the 6 temps before your shift. The app keeps your line — it never draws its own.</p></div>
+          <div class="note"><svg><use href="#i-up"/></svg><p><strong>Your coverline.</strong> Drag it 0.05 &#176;C above the highest of the 6 temps before your shift. The app keeps your line &#8212; it never draws its own.</p></div>
           <div class="card daydetail" id="day-detail">
-            <div class="crow"><div><p class="klabel" style="color:var(--acc)" id="dd-date">Sun, Mar 1 · Cycle Day 15</p><b id="dd-marks" style="font-size:15px;font-weight:700;color:var(--coral)">★ You marked Peak Day</b></div><button class="chip" style="min-height:34px;padding:6px 12px">Edit</button></div>
+            <div class="crow"><div><p class="klabel" style="color:var(--acc)" id="dd-date">Sun, Mar 1 &#183; Cycle Day 15</p><b id="dd-marks" style="font-size:15px;font-weight:700;color:var(--coral)">&#9733; You marked Peak Day</b></div><button class="chip" style="min-height:34px;padding:6px 12px">Edit</button></div>
             <div class="dd-grid">
-              <div><span class="klabel">Mucus</span><b id="dd-mucus">Slippery · egg-white · 3+ cm</b></div>
-              <div><span class="klabel">Temperature</span><b id="dd-bbt" style="font-variant-numeric:tabular-nums">36.22 °C</b></div>
+              <div><span class="klabel">Mucus</span><b id="dd-mucus">Slippery &#183; egg-white &#183; 3+ cm</b></div>
+              <div><span class="klabel">Temperature</span><b id="dd-bbt" style="font-variant-numeric:tabular-nums">36.22 &#176;C</b></div>
               <div><span class="klabel">Bleeding</span><b id="dd-bleed">None</b></div>
-              <div><span class="klabel">Note</span><b id="dd-note" style="font-weight:500;font-size:12px">Last day of peak mucus — identified Mar 2</b></div>
+              <div><span class="klabel">Note</span><b id="dd-note" style="font-weight:500;font-size:12px">Last day of peak mucus &#8212; identified Mar 2</b></div>
             </div>
           </div>
         </div>
@@ -641,13 +642,13 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
     </div></div></div>
   </div>
 </section>
-<!-- ══════════ 04 · LEARN HUB ══════════ -->
+<!-- ========== 04 &#183; LEARN HUB ========== -->
 <section class="exhibit" id="ex-learn">
   <div class="x-wrap ex-grid">
     <div class="ex-cap">
       <p class="ex-num">04</p>
-      <h3>Learn — a course, not a checklist</h3>
-      <p>The five modules keep their sequence and practitioner tips, but the hub now speaks in the app's <strong>editorial serif voice</strong> and shows honest progress: moon-phase rings fill per step, and completion means <em>demonstrated</em> — each module ends with a knowledge check. Practice drills and the worked example live here too, so the sample cycle becomes a first-class teaching object you can revisit any time.</p>
+      <h3>Learn &#8212; a course, not a checklist</h3>
+      <p>The five modules keep their sequence and practitioner tips, but the hub now speaks in the app's <strong>editorial serif voice</strong> and shows honest progress: moon-phase rings fill per step, and completion means <em>demonstrated</em> &#8212; each module ends with a knowledge check. Practice drills and the worked example live here too, so the sample cycle becomes a first-class teaching object you can revisit any time.</p>
       <ul>
         <li>Per-step progress persists (no more all-or-nothing)</li>
         <li>Example cycle and drills promoted into the curriculum</li>
@@ -659,19 +660,19 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
       <div class="screen">
         <div class="pv">
           <h2 class="ltitle serif">Learn the method</h2>
-          <p class="lsub">Justisse foundations · your pace, your calls</p>
+          <p class="lsub">Justisse foundations &#183; your pace, your calls</p>
           <div class="card" style="background:linear-gradient(135deg,var(--acc-soft),var(--sur))">
             <div class="crow">
-              <div><p class="klabel" style="color:var(--acc)">Your learning cycle</p><p style="font-size:15px;font-weight:700;margin-top:4px">Cycle 1 of the 3-cycle commitment</p><p style="font-size:12px;color:var(--ink2);margin-top:2px">2 modules done · mucus module in progress</p></div>
+              <div><p class="klabel" style="color:var(--acc)">Your learning cycle</p><p style="font-size:15px;font-weight:700;margin-top:4px">Cycle 1 of the 3-cycle commitment</p><p style="font-size:12px;color:var(--ink2);margin-top:2px">2 modules done &#183; mucus module in progress</p></div>
               <div class="moonbadge" style="border-color:var(--acc)"><svg><use href="#m-cres"/></svg><b>38%</b></div>
             </div>
           </div>
 
-          <div class="mod"><div class="ring"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="19" fill="none" stroke="var(--sur2)" stroke-width="4"/><circle cx="23" cy="23" r="19" fill="none" stroke="var(--ok)" stroke-width="4" stroke-linecap="round" stroke-dasharray="119.4" stroke-dashoffset="0"/></svg><span class="glyph" style="color:var(--ok)"><svg><use href="#i-check"/></svg></span></div><div style="flex:1"><b style="font-size:15px;font-weight:700">Welcome to body literacy</b><small style="display:block;font-size:12px;color:var(--ink2)">3 steps · 2 min · completed</small></div><svg class="chev" style="width:18px;height:18px"><use href="#i-chev"/></svg></div>
-          <div class="mod" style="border-color:var(--acc)"><div class="ring"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="19" fill="none" stroke="var(--sur2)" stroke-width="4"/><circle cx="23" cy="23" r="19" fill="none" stroke="var(--acc)" stroke-width="4" stroke-linecap="round" stroke-dasharray="119.4" stroke-dashoffset="39.8"/></svg><span class="glyph"><svg><use href="#m-full"/></svg></span></div><div style="flex:1"><b style="font-size:15px;font-weight:700">Skill 1 · Cervical mucus</b><small style="display:block;font-size:12px;color:var(--ink2)">Step 4 of 6 · resume "Peak Day"</small></div><span class="chip on" style="min-height:34px;padding:6px 12px">Resume</span></div>
-          <div class="mod"><div class="ring"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="19" fill="none" stroke="var(--sur2)" stroke-width="4"/></svg><span class="glyph"><svg><use href="#i-therm"/></svg></span></div><div style="flex:1"><b style="font-size:15px;font-weight:700">Skill 2 · Temperature</b><small style="display:block;font-size:12px;color:var(--ink2)">4 steps · 4 min</small></div><svg class="chev" style="width:18px;height:18px"><use href="#i-chev"/></svg></div>
-          <div class="mod"><div class="ring"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="19" fill="none" stroke="var(--sur2)" stroke-width="4"/></svg><span class="glyph"><svg><use href="#m-half"/></svg></span></div><div style="flex:1"><b style="font-size:15px;font-weight:700">Skill 3 · Cervical position</b><small style="display:block;font-size:12px;color:var(--ink2)">2 steps · 3 min · optional</small></div><svg class="chev" style="width:18px;height:18px"><use href="#i-chev"/></svg></div>
-          <div class="mod"><div class="ring"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="19" fill="none" stroke="var(--sur2)" stroke-width="4"/></svg><span class="glyph"><svg><use href="#i-chart"/></svg></span></div><div style="flex:1"><b style="font-size:15px;font-weight:700">Skill 4 · Reading your chart</b><small style="display:block;font-size:12px;color:var(--ink2)">4 steps · 4 min</small></div><svg class="chev" style="width:18px;height:18px"><use href="#i-chev"/></svg></div>
+          <div class="mod"><div class="ring"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="19" fill="none" stroke="var(--sur2)" stroke-width="4"/><circle cx="23" cy="23" r="19" fill="none" stroke="var(--ok)" stroke-width="4" stroke-linecap="round" stroke-dasharray="119.4" stroke-dashoffset="0"/></svg><span class="glyph" style="color:var(--ok)"><svg><use href="#i-check"/></svg></span></div><div style="flex:1"><b style="font-size:15px;font-weight:700">Welcome to body literacy</b><small style="display:block;font-size:12px;color:var(--ink2)">3 steps &#183; 2 min &#183; completed</small></div><svg class="chev" style="width:18px;height:18px"><use href="#i-chev"/></svg></div>
+          <div class="mod" style="border-color:var(--acc)"><div class="ring"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="19" fill="none" stroke="var(--sur2)" stroke-width="4"/><circle cx="23" cy="23" r="19" fill="none" stroke="var(--acc)" stroke-width="4" stroke-linecap="round" stroke-dasharray="119.4" stroke-dashoffset="39.8"/></svg><span class="glyph"><svg><use href="#m-full"/></svg></span></div><div style="flex:1"><b style="font-size:15px;font-weight:700">Skill 1 &#183; Cervical mucus</b><small style="display:block;font-size:12px;color:var(--ink2)">Step 4 of 6 &#183; resume "Peak Day"</small></div><span class="chip on" style="min-height:34px;padding:6px 12px">Resume</span></div>
+          <div class="mod"><div class="ring"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="19" fill="none" stroke="var(--sur2)" stroke-width="4"/></svg><span class="glyph"><svg><use href="#i-therm"/></svg></span></div><div style="flex:1"><b style="font-size:15px;font-weight:700">Skill 2 &#183; Temperature</b><small style="display:block;font-size:12px;color:var(--ink2)">4 steps &#183; 4 min</small></div><svg class="chev" style="width:18px;height:18px"><use href="#i-chev"/></svg></div>
+          <div class="mod"><div class="ring"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="19" fill="none" stroke="var(--sur2)" stroke-width="4"/></svg><span class="glyph"><svg><use href="#m-half"/></svg></span></div><div style="flex:1"><b style="font-size:15px;font-weight:700">Skill 3 &#183; Cervical position</b><small style="display:block;font-size:12px;color:var(--ink2)">2 steps &#183; 3 min &#183; optional</small></div><svg class="chev" style="width:18px;height:18px"><use href="#i-chev"/></svg></div>
+          <div class="mod"><div class="ring"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="19" fill="none" stroke="var(--sur2)" stroke-width="4"/></svg><span class="glyph"><svg><use href="#i-chart"/></svg></span></div><div style="flex:1"><b style="font-size:15px;font-weight:700">Skill 4 &#183; Reading your chart</b><small style="display:block;font-size:12px;color:var(--ink2)">4 steps &#183; 4 min</small></div><svg class="chev" style="width:18px;height:18px"><use href="#i-chev"/></svg></div>
 
           <p class="klabel" style="margin-top:22px">Practice</p>
           <div class="mod" style="border-color:var(--coral)"><span class="ic" style="width:46px;height:46px;border-radius:14px;background:var(--coral-soft);color:var(--coral);display:flex;align-items:center;justify-content:center"><svg style="width:22px;height:22px"><use href="#i-star"/></svg></span><div style="flex:1"><b style="font-size:15px;font-weight:700">Chart-reading drills <span class="new" style="vertical-align:2px;margin-left:4px">NEW</span></b><small style="display:block;font-size:12px;color:var(--ink2)">Find Peak Day on 6 practice cycles</small></div><svg class="chev" style="width:18px;height:18px"><use href="#i-chev"/></svg></div>
@@ -682,20 +683,20 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
   </div>
 </section>
 
-<!-- ══════════ 05 · LESSON PLAYER ══════════ -->
+<!-- ========== 05 &#183; LESSON PLAYER ========== -->
 <section class="exhibit" id="ex-lesson">
   <div class="x-wrap ex-grid">
     <div class="ex-cap">
       <p class="ex-num">05</p>
       <h3>Lessons that check understanding <span class="new">NEW ELEMENT</span></h3>
-      <p>The lesson text — already excellent — gets the serif reading voice it deserves, and every module now ends with a <strong>knowledge check</strong>. This one targets the single most error-prone concept in the method: Peak Day is identified <em>retrospectively</em>. Completion badges mean something once they're earned.</p>
+      <p>The lesson text &#8212; already excellent &#8212; gets the serif reading voice it deserves, and every module now ends with a <strong>knowledge check</strong>. This one targets the single most error-prone concept in the method: Peak Day is identified <em>retrospectively</em>. Completion badges mean something once they're earned.</p>
       <ul>
         <li>Practitioner tips become signature callout cards</li>
-        <li>One question per module — friendly, never a gate you can't retry</li>
+        <li>One question per module &#8212; friendly, never a gate you can't retry</li>
         <li>Wrong answers explain, right answers reinforce</li>
       </ul>
       <div class="ex-fix"><span class="lead">Addresses</span><span>P-3</span><span>U-7</span></div>
-      <p class="ex-try">Try it: answer the question — try a wrong option first.</p>
+      <p class="ex-try">Try it: answer the question &#8212; try a wrong option first.</p>
     </div>
     <div class="ex-stage"><div class="pwrap"><div class="phone" data-active-tab="learn">
       <div class="screen">
@@ -705,19 +706,19 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
             <span style="font-size:12px;font-weight:700;color:var(--ink2);font-variant-numeric:tabular-nums">Step 5 of 6</span>
           </div>
           <div class="dots" style="justify-content:flex-start;margin:8px 0 18px"><i></i><i></i><i></i><i></i><i class="on"></i><i></i></div>
-          <h2 class="serif" style="font-size:24px;font-weight:700;line-height:1.25;letter-spacing:-.2px">Peak Day — the key concept</h2>
-          <p class="serif" style="font-size:16px;line-height:1.7;margin-top:12px">Peak Day is the <strong>last</strong> day of peak-quality mucus — clear, stretchy, wet, slippery. You identify it <strong>the day after</strong>, when quality changes or mucus disappears. In Justisse, count four days after Peak before considering the fertile window closed.</p>
-          <div class="note" style="border-left:3px solid var(--gold);border-radius:0 12px 12px 0"><svg style="color:var(--gold)"><use href="#i-heart"/></svg><p><strong>Practitioner tip.</strong> You won't know it's Peak Day on the day itself. Be patient — this retrospective call is how the method earns its accuracy.</p></div>
+          <h2 class="serif" style="font-size:24px;font-weight:700;line-height:1.25;letter-spacing:-.2px">Peak Day &#8212; the key concept</h2>
+          <p class="serif" style="font-size:16px;line-height:1.7;margin-top:12px">Peak Day is the <strong>last</strong> day of peak-quality mucus &#8212; clear, stretchy, wet, slippery. You identify it <strong>the day after</strong>, when quality changes or mucus disappears. In Justisse, count four days after Peak before considering the fertile window closed.</p>
+          <div class="note" style="border-left:3px solid var(--gold);border-radius:0 12px 12px 0"><svg style="color:var(--gold)"><use href="#i-heart"/></svg><p><strong>Practitioner tip.</strong> You won't know it's Peak Day on the day itself. Be patient &#8212; this retrospective call is how the method earns its accuracy.</p></div>
 
           <div class="card" style="border-color:var(--acc);margin-top:18px">
             <p class="klabel" style="color:var(--acc)">Check your understanding</p>
             <p style="font-size:14.5px;font-weight:600;margin-top:8px;line-height:1.45">Monday: egg-white, 3+ cm, slippery. Tuesday: tacky and dry-ish. When can you first <em>identify</em> Peak Day?</p>
             <div id="quiz">
-              <button class="quiz-opt" data-q="wrong">Monday evening — it felt like peak</button>
-              <button class="quiz-opt" data-q="right">Tuesday — when quality visibly dropped</button>
+              <button class="quiz-opt" data-q="wrong">Monday evening &#8212; it felt like peak</button>
+              <button class="quiz-opt" data-q="right">Tuesday &#8212; when quality visibly dropped</button>
               <button class="quiz-opt" data-q="wrong">Four days later, after the count</button>
             </div>
-            <div class="feedback" id="quiz-good"><div class="note" style="background:var(--ok-soft)"><svg style="color:var(--ok)"><use href="#i-check"/></svg><p><strong>Exactly.</strong> Peak Day is Monday — but you can only <em>call</em> it on Tuesday, once the change shows. Now the 4-day count begins.</p></div></div>
+            <div class="feedback" id="quiz-good"><div class="note" style="background:var(--ok-soft)"><svg style="color:var(--ok)"><use href="#i-check"/></svg><p><strong>Exactly.</strong> Peak Day is Monday &#8212; but you can only <em>call</em> it on Tuesday, once the change shows. Now the 4-day count begins.</p></div></div>
             <div class="feedback" id="quiz-bad"><div class="note" style="background:var(--coral-soft)"><svg style="color:var(--coral)"><use href="#i-up"/></svg><p><strong>Not quite.</strong> On Monday you can't yet know it's the last peak day. The identifying moment is the day <em>after</em>, when quality drops. Try again.</p></div></div>
           </div>
           <button class="btn-a" style="margin-top:14px">Continue</button>
@@ -727,13 +728,13 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
   </div>
 </section>
 
-<!-- ══════════ 06 · ONBOARDING ══════════ -->
+<!-- ========== 06 &#183; ONBOARDING ========== -->
 <section class="exhibit" id="ex-onboard">
   <div class="x-wrap ex-grid">
     <div class="ex-cap">
       <p class="ex-num">06</p>
       <h3>Onboarding that keeps its promises</h3>
-      <p>Three honest pages: what your body is telling you, what brings you here, and what this app will never do. The goal you pick now <strong>actually tailors the app</strong> — and it's changeable in Settings, so "you can change this anytime" is finally true. Returning users skip all of this: the app opens straight to Today.</p>
+      <p>Three honest pages: what your body is telling you, what brings you here, and what this app will never do. The goal you pick now <strong>actually tailors the app</strong> &#8212; and it's changeable in Settings, so "you can change this anytime" is finally true. Returning users skip all of this: the app opens straight to Today.</p>
       <ul>
         <li>Paged flow with real momentum, not four walls of text</li>
         <li>Goal cards with distinct iconography</li>
@@ -749,14 +750,14 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
             <div class="ob-page" style="display:flex;flex-direction:column;justify-content:center">
               <svg style="width:64px;height:64px;color:var(--acc);margin-bottom:20px"><use href="#i-moon"/></svg>
               <h2 class="serif" style="font-size:30px;font-weight:700;line-height:1.2;letter-spacing:-.3px;max-width:12ch">Your body keeps a calendar of its own.</h2>
-              <p style="font-size:15px;color:var(--ink2);margin-top:14px;line-height:1.6">Every cycle, it writes observable signs of fertility. The Justisse Method teaches you to read them — with precision, and without outsourcing the reading to an algorithm.</p>
+              <p style="font-size:15px;color:var(--ink2);margin-top:14px;line-height:1.6">Every cycle, it writes observable signs of fertility. The Justisse Method teaches you to read them &#8212; with precision, and without outsourcing the reading to an algorithm.</p>
             </div>
             <div class="ob-page">
               <h2 style="font-size:26px;font-weight:800;letter-spacing:-.5px;margin-top:8px">What brings you here?</h2>
-              <p style="font-size:13.5px;color:var(--ink2);margin-top:6px">This tailors your app — and you can change it anytime in Settings.</p>
+              <p style="font-size:13.5px;color:var(--ink2);margin-top:6px">This tailors your app &#8212; and you can change it anytime in Settings.</p>
               <div data-choice-group data-choice-class="goal">
                 <button class="goal on"><span class="ic"><svg style="width:20px;height:20px"><use href="#i-book"/></svg></span><span><b>Body literacy</b><small>Understand my cycle</small></span></button>
-                <button class="goal"><span class="ic"><svg style="width:20px;height:20px"><use href="#i-lock"/></svg></span><span><b>Avoid pregnancy</b><small>Learn with a practitioner — we'll keep framing conservative</small></span></button>
+                <button class="goal"><span class="ic"><svg style="width:20px;height:20px"><use href="#i-lock"/></svg></span><span><b>Avoid pregnancy</b><small>Learn with a practitioner &#8212; we'll keep framing conservative</small></span></button>
                 <button class="goal"><span class="ic"><svg style="width:20px;height:20px"><use href="#i-seed"/></svg></span><span><b>Conceive</b><small>Understand my fertile window</small></span></button>
                 <button class="goal"><span class="ic"><svg style="width:20px;height:20px"><use href="#i-heart"/></svg></span><span><b>Cycle health</b><small>Track my fifth vital sign</small></span></button>
               </div>
@@ -766,8 +767,8 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
               <p style="font-size:13.5px;color:var(--ink2);margin-top:6px">These aren't missing features. They're the method.</p>
               <div class="card"><b style="font-size:14.5px;font-weight:700">No fertility verdicts</b><p style="font-size:12.5px;color:var(--ink2);margin-top:3px">We never say "you're safe today." You learn to make that call.</p></div>
               <div class="card"><b style="font-size:14.5px;font-weight:700">No auto-interpretation</b><p style="font-size:12.5px;color:var(--ink2);margin-top:3px">You draw your coverline. You mark Peak Day. We keep the record.</p></div>
-              <div class="card"><b style="font-size:14.5px;font-weight:700">No cloud, no account</b><p style="font-size:12.5px;color:var(--ink2);margin-top:3px">Your chart lives on this device only — export it whenever you like.</p></div>
-              <div class="note"><svg><use href="#i-heart"/></svg><p><strong>Learning to avoid pregnancy?</strong> Work with a trained practitioner — find one at justisse.ca. This app teaches foundations.</p></div>
+              <div class="card"><b style="font-size:14.5px;font-weight:700">No cloud, no account</b><p style="font-size:12.5px;color:var(--ink2);margin-top:3px">Your chart lives on this device only &#8212; export it whenever you like.</p></div>
+              <div class="note"><svg><use href="#i-heart"/></svg><p><strong>Learning to avoid pregnancy?</strong> Work with a trained practitioner &#8212; find one at justisse.ca. This app teaches foundations.</p></div>
             </div>
           </div>
         </div>
@@ -782,17 +783,17 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
     </div></div></div>
   </div>
 </section>
-<!-- ══════════ 07 · FIRST-CYCLE MODE ══════════ -->
+<!-- ========== 07 &#183; FIRST-CYCLE MODE ========== -->
 <section class="exhibit" id="ex-firstcycle">
   <div class="x-wrap ex-grid">
     <div class="ex-cap">
       <p class="ex-num">07</p>
       <h3>Guided first cycle <span class="new">NEW</span></h3>
-      <p>Cycles 1–3 are the learning period — so the app behaves like a companion, not a form. Each day gets a <strong>focus card tied to your cycle phase</strong> ("this week you're learning what dry feels like"), a tiny observation checklist, and honest progress toward the 3-cycle commitment. Consistency is framed as practice, never as a guilt streak.</p>
+      <p>Cycles 1&#8211;3 are the learning period &#8212; so the app behaves like a companion, not a form. Each day gets a <strong>focus card tied to your cycle phase</strong> ("this week you're learning what dry feels like"), a tiny observation checklist, and honest progress toward the 3-cycle commitment. Consistency is framed as practice, never as a guilt streak.</p>
       <ul>
         <li>Phase-aware micro-coaching, written in the method's voice</li>
         <li>Celebrates your first self-spotted Point of Change</li>
-        <li>Fades away after cycle 3 — graduation, by design</li>
+        <li>Fades away after cycle 3 &#8212; graduation, by design</li>
       </ul>
       <div class="ex-fix"><span class="lead">Addresses</span><span>P-5</span><span>P-3</span><span>N-3</span></div>
       <p class="ex-try">Try it: tick the checklist items.</p>
@@ -802,24 +803,24 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
         <div class="pv">
           <div class="crow">
             <div><h2 class="ltitle">Today</h2><p class="lsub">Tuesday, February 24</p></div>
-            <div class="moonbadge"><svg><use href="#m-cres"/></svg><span><b>Cycle Day 10</b><small>Cycle 1 · learning</small></span></div>
+            <div class="moonbadge"><svg><use href="#m-cres"/></svg><span><b>Cycle Day 10</b><small>Cycle 1 &#183; learning</small></span></div>
           </div>
           <div class="card" style="background:linear-gradient(150deg,var(--acc-soft),var(--sur));border-color:var(--acc)">
-            <p class="klabel" style="color:var(--acc)">First cycle · week 2 focus</p>
+            <p class="klabel" style="color:var(--acc)">First cycle &#183; week 2 focus</p>
             <h4 class="serif" style="font-size:19px;font-weight:700;margin-top:6px;line-height:1.3">Learning your Basic Infertile Pattern</h4>
-            <p style="font-size:13px;color:var(--ink2);margin-top:6px;line-height:1.5">You've logged five dry days in a row — that consistency is exactly how a BIP shows itself. Keep observing at every bathroom visit. The first day that feels <em>different</em> is worth noting carefully.</p>
-            <button class="btn-g" style="margin-top:12px;width:auto;padding:10px 16px">Revisit: what is a BIP? · 2 min</button>
+            <p style="font-size:13px;color:var(--ink2);margin-top:6px;line-height:1.5">You've logged five dry days in a row &#8212; that consistency is exactly how a BIP shows itself. Keep observing at every bathroom visit. The first day that feels <em>different</em> is worth noting carefully.</p>
+            <button class="btn-g" style="margin-top:12px;width:auto;padding:10px 16px">Revisit: what is a BIP? &#183; 2 min</button>
           </div>
           <div class="card">
             <h4>Today's practice</h4>
             <div style="margin-top:6px">
-              <button class="fc-check on"><span class="box"><svg style="width:14px;height:14px"><use href="#i-check"/></svg></span><span>Temperature before rising — 36.30 °C</span></button>
+              <button class="fc-check on"><span class="box"><svg style="width:14px;height:14px"><use href="#i-check"/></svg></span><span>Temperature before rising &#8212; 36.30 &#176;C</span></button>
               <button class="fc-check on"><span class="box"><svg style="width:14px;height:14px"><use href="#i-check"/></svg></span><span>Checked sensation at each bathroom visit</span></button>
               <button class="fc-check"><span class="box"><svg style="width:14px;height:14px"><use href="#i-check"/></svg></span><span>Evening: record the day's most fertile sign</span></button>
             </div>
           </div>
           <div class="card">
-            <div class="crow"><h4>The 3-cycle commitment</h4><span class="sum" style="font-variant-numeric:tabular-nums">Day 10 · Cycle 1</span></div>
+            <div class="crow"><h4>The 3-cycle commitment</h4><span class="sum" style="font-variant-numeric:tabular-nums">Day 10 &#183; Cycle 1</span></div>
             <div style="display:flex;gap:6px;margin-top:12px" aria-hidden="true">
               <div style="flex:1;height:8px;border-radius:4px;background:var(--acc);opacity:.9"></div>
               <div style="flex:1;height:8px;border-radius:4px;background:var(--sur2)"></div>
@@ -827,24 +828,24 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
             </div>
             <p style="font-size:12px;color:var(--ink2);margin-top:8px">Charting practice builds pattern recognition. Most charters feel confident reading their own cycle after three.</p>
           </div>
-          <div class="note"><svg><use href="#i-flag"/></svg><p><strong>Unsure about an observation?</strong> Flag it — it joins your questions list for your practitioner.</p></div>
+          <div class="note"><svg><use href="#i-flag"/></svg><p><strong>Unsure about an observation?</strong> Flag it &#8212; it joins your questions list for your practitioner.</p></div>
         </div>
       </div>
     </div></div></div>
   </div>
 </section>
 
-<!-- ══════════ 08 · PRACTICE DRILL ══════════ -->
+<!-- ========== 08 &#183; PRACTICE DRILL ========== -->
 <section class="exhibit" id="ex-drill">
   <div class="x-wrap ex-grid">
     <div class="ex-cap">
       <p class="ex-num">08</p>
       <h3>Chart-reading drills <span class="new">NEW</span></h3>
-      <p>This is where "the user is the algorithm" becomes a trainable skill. The app presents <strong>practice cycles</strong> — textbook, delayed ovulation, double peak, disturbed temps — and asks you to make the call. It checks your answer against the rules it taught and explains. Being wrong here is free; that's the point. <strong>The app checks answers on practice charts only — it still never interprets your real one.</strong></p>
+      <p>This is where "the user is the algorithm" becomes a trainable skill. The app presents <strong>practice cycles</strong> &#8212; textbook, delayed ovulation, double peak, disturbed temps &#8212; and asks you to make the call. It checks your answer against the rules it taught and explains. Being wrong here is free; that's the point. <strong>The app checks answers on practice charts only &#8212; it still never interprets your real one.</strong></p>
       <ul>
         <li>Rule-based feedback quotes the exact rule you applied</li>
         <li>Drill library doubles as a teaching aid practitioners can assign</li>
-        <li>Difficulty grows: ambiguous cell slough, double peaks…</li>
+        <li>Difficulty grows: ambiguous cell slough, double peaks&#8230;</li>
       </ul>
       <div class="ex-fix"><span class="lead">Addresses</span><span>P-3</span><span>P-2</span><span>N-2</span></div>
       <p class="ex-try">Try it: tap the day you'd call Peak Day. (Hint: quality drops on Mar 2.)</p>
@@ -857,9 +858,9 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
             <span style="font-size:12px;font-weight:700;color:var(--ink2);font-variant-numeric:tabular-nums">Drill 2 of 6</span>
           </div>
           <h2 class="serif" style="font-size:24px;font-weight:700;letter-spacing:-.2px;margin-top:10px">Find Peak Day</h2>
-          <p style="font-size:13.5px;color:var(--ink2);margin-top:6px;line-height:1.5">A textbook cycle. Tap the day you'd identify as <strong style="color:var(--ink)">Peak Day</strong> — the last day of peak-quality mucus.</p>
+          <p style="font-size:13.5px;color:var(--ink2);margin-top:6px;line-height:1.5">A textbook cycle. Tap the day you'd identify as <strong style="color:var(--ink)">Peak Day</strong> &#8212; the last day of peak-quality mucus.</p>
           <div class="card" style="padding:14px 10px">
-            <p class="klabel" style="padding-left:4px">Feb 26 – Mar 4 · mucus &amp; temperature</p>
+            <p class="klabel" style="padding-left:4px">Feb 26 &#8211; Mar 4 &#183; mucus &amp; temperature</p>
             <div class="chart-scroll" style="margin:0 -10px;padding:0 10px">
               <div style="display:flex;gap:2px;margin-top:10px" id="drill-strip">
                 <button class="drill-day" data-drill="wrong1"><b>26</b><svg style="color:var(--m-wet)"><use href="#m-half"/></svg><span style="font-size:9.5px;color:var(--ink2)">creamy<br>wet</span></button>
@@ -867,14 +868,14 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
                 <button class="drill-day" data-drill="wrong1"><b>28</b><svg style="color:var(--m-peak)"><use href="#m-full"/></svg><span style="font-size:9.5px;color:var(--ink2)">EW<br>slippery</span></button>
                 <button class="drill-day" data-drill="right"><b>1</b><svg style="color:var(--m-peak)"><use href="#m-full"/></svg><span style="font-size:9.5px;color:var(--ink2)">EW<br>slippery</span></button>
                 <button class="drill-day" data-drill="wrong2"><b>2</b><svg style="color:var(--m-moist)"><use href="#m-cres"/></svg><span style="font-size:9.5px;color:var(--ink2)">tacky<br>breaks</span></button>
-                <button class="drill-day" data-drill="wrong2"><b>3</b><svg style="color:var(--m-dry)"><use href="#m-new"/></svg><span style="font-size:9.5px;color:var(--ink2)">dry<br>—</span></button>
-                <button class="drill-day" data-drill="wrong2"><b>4</b><svg style="color:var(--m-dry)"><use href="#m-new"/></svg><span style="font-size:9.5px;color:var(--ink2)">dry<br>—</span></button>
+                <button class="drill-day" data-drill="wrong2"><b>3</b><svg style="color:var(--m-dry)"><use href="#m-new"/></svg><span style="font-size:9.5px;color:var(--ink2)">dry<br>&#8212;</span></button>
+                <button class="drill-day" data-drill="wrong2"><b>4</b><svg style="color:var(--m-dry)"><use href="#m-new"/></svg><span style="font-size:9.5px;color:var(--ink2)">dry<br>&#8212;</span></button>
               </div>
             </div>
           </div>
-          <div class="feedback" id="drill-good"><div class="note" style="background:var(--ok-soft)"><svg style="color:var(--ok)"><use href="#i-check"/></svg><p><strong>That's the one.</strong> Mar 1 is the last day of egg-white and slippery sensation — quality drops to tacky on Mar 2, which is when you'd recognise it. Peak + 4 runs to the evening of Mar 5.</p></div></div>
+          <div class="feedback" id="drill-good"><div class="note" style="background:var(--ok-soft)"><svg style="color:var(--ok)"><use href="#i-check"/></svg><p><strong>That's the one.</strong> Mar 1 is the last day of egg-white and slippery sensation &#8212; quality drops to tacky on Mar 2, which is when you'd recognise it. Peak + 4 runs to the evening of Mar 5.</p></div></div>
           <div class="feedback" id="drill-bad1"><div class="note" style="background:var(--coral-soft)"><svg style="color:var(--coral)"><use href="#i-up"/></svg><p><strong>Peak quality continues after this day.</strong> Peak Day is the <em>last</em> day of peak-quality mucus, not the first. Look for where slippery egg-white ends.</p></div></div>
-          <div class="feedback" id="drill-bad2"><div class="note" style="background:var(--coral-soft)"><svg style="color:var(--coral)"><use href="#i-up"/></svg><p><strong>Quality has already dropped here.</strong> This day is <em>after</em> the peak — it's how you recognise Peak Day retrospectively, but the mark belongs on the last peak-quality day.</p></div></div>
+          <div class="feedback" id="drill-bad2"><div class="note" style="background:var(--coral-soft)"><svg style="color:var(--coral)"><use href="#i-up"/></svg><p><strong>Quality has already dropped here.</strong> This day is <em>after</em> the peak &#8212; it's how you recognise Peak Day retrospectively, but the mark belongs on the last peak-quality day.</p></div></div>
           <div class="card" style="margin-top:14px">
             <div class="crow"><span style="font-size:13px;color:var(--ink2);font-weight:600">Drill progress</span><span style="font-size:13px;font-weight:700;font-variant-numeric:tabular-nums">1 / 6 correct</span></div>
             <div style="display:flex;gap:5px;margin-top:10px" aria-hidden="true">
@@ -892,15 +893,15 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
   </div>
 </section>
 
-<!-- ══════════ 09 · CYCLE REVIEW ══════════ -->
+<!-- ========== 09 &#183; CYCLE REVIEW ========== -->
 <section class="exhibit" id="ex-review">
   <div class="x-wrap ex-grid">
     <div class="ex-cap">
       <p class="ex-num">09</p>
       <h3>The cycle review ritual <span class="new">NEW</span></h3>
-      <p>When a new cycle begins, the completed one deserves a moment. A short guided reflection over your own chart — where was your Point of Change, did your BIP hold, what surprised you — turns a month of logging into learning, and <strong>your answers become the multi-cycle story over time</strong>. Questions you flagged all cycle are gathered here, ready for your practitioner.</p>
+      <p>When a new cycle begins, the completed one deserves a moment. A short guided reflection over your own chart &#8212; where was your Point of Change, did your BIP hold, what surprised you &#8212; turns a month of logging into learning, and <strong>your answers become the multi-cycle story over time</strong>. Questions you flagged all cycle are gathered here, ready for your practitioner.</p>
       <ul>
-        <li>Reflection, not analysis — the app asks, you answer</li>
+        <li>Reflection, not analysis &#8212; the app asks, you answer</li>
         <li>Saved summaries become your cycle history</li>
         <li>Flows straight into the practitioner export</li>
       </ul>
@@ -909,7 +910,7 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
     <div class="ex-stage"><div class="pwrap"><div class="phone" data-active-tab="chart">
       <div class="screen">
         <div class="pv">
-          <p class="klabel" style="color:var(--acc)">Cycle 5 complete · 29 days</p>
+          <p class="klabel" style="color:var(--acc)">Cycle 5 complete &#183; 29 days</p>
           <h2 class="serif ltitle" style="font-size:28px;margin-top:6px">Close the cycle</h2>
           <p class="lsub" style="margin-top:6px">Five minutes of reflection before Cycle 6 begins.</p>
           <div class="card" style="background:linear-gradient(135deg,var(--acc-soft),var(--sur));text-align:center;padding:20px">
@@ -921,12 +922,12 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
               <svg style="width:26px;height:26px;color:var(--coral)"><use href="#i-star"/></svg>
               <svg style="width:26px;height:26px;color:var(--m-dry)"><use href="#m-new"/></svg>
             </div>
-            <p style="font-size:12.5px;color:var(--ink2);margin-top:10px">Menses · dry BIP · point of change · peak · your 4-day count · luteal</p>
+            <p style="font-size:12.5px;color:var(--ink2);margin-top:10px">Menses &#183; dry BIP &#183; point of change &#183; peak &#183; your 4-day count &#183; luteal</p>
           </div>
-          <div class="rev-q"><b>Where did you mark your Point of Change — and what changed?</b><textarea aria-label="Your answer">Feb 24. First tacky mucus and a moist feel after five dry days.</textarea></div>
-          <div class="rev-q"><b>Did your BIP hold before it?</b><textarea aria-label="Your answer">Yes — dry every day, except the cell slough I always get on CD 9.</textarea></div>
+          <div class="rev-q"><b>Where did you mark your Point of Change &#8212; and what changed?</b><textarea aria-label="Your answer">Feb 24. First tacky mucus and a moist feel after five dry days.</textarea></div>
+          <div class="rev-q"><b>Did your BIP hold before it?</b><textarea aria-label="Your answer">Yes &#8212; dry every day, except the cell slough I always get on CD 9.</textarea></div>
           <div class="rev-q"><b>What do you want to ask your practitioner?</b>
-            <div class="note" style="margin-top:10px"><svg><use href="#i-flag"/></svg><p><strong>2 flagged this cycle:</strong> "Is CD 9 cell slough part of my BIP?" · "Temp on Mar 3 — valid after 5 h sleep?"</p></div>
+            <div class="note" style="margin-top:10px"><svg><use href="#i-flag"/></svg><p><strong>2 flagged this cycle:</strong> "Is CD 9 cell slough part of my BIP?" &#183; "Temp on Mar 3 &#8212; valid after 5 h sleep?"</p></div>
           </div>
           <button class="btn-a" style="margin-top:14px">Save review &amp; share chart</button>
           <button class="btn-g" style="margin-top:8px">Skip this cycle</button>
@@ -935,13 +936,13 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
     </div></div></div>
   </div>
 </section>
-<!-- ══════════ 10 · GLOSSARY ══════════ -->
+<!-- ========== 10 &#183; GLOSSARY ========== -->
 <section class="exhibit" id="ex-glossary">
   <div class="x-wrap ex-grid">
     <div class="ex-cap">
       <p class="ex-num">10</p>
       <h3>A living glossary <span class="new">NEW</span></h3>
-      <p>The method has a vocabulary — BIP, coverline, cell slough, the double-check — and today it's defined once in a lesson and never again. The glossary defines every term in one searchable place, and every term becomes <strong>tappable wherever it appears</strong>: in lessons, on the chart legend, in the tracker.</p>
+      <p>The method has a vocabulary &#8212; BIP, coverline, cell slough, the double-check &#8212; and today it's defined once in a lesson and never again. The glossary defines every term in one searchable place, and every term becomes <strong>tappable wherever it appears</strong>: in lessons, on the chart legend, in the tracker.</p>
       <ul>
         <li>Search really filters (try it)</li>
         <li>Each term links back to the lesson that teaches it</li>
@@ -956,36 +957,36 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
           <p class="lsub">Every term, in plain language</p>
           <div style="position:relative;margin-top:14px">
             <svg style="position:absolute;left:13px;top:13px;width:18px;height:18px;color:var(--ink3)"><use href="#i-search"/></svg>
-            <input class="pfield" id="glo-search" placeholder="Search terms…" style="padding-left:40px" aria-label="Search glossary">
+            <input class="pfield" id="glo-search" placeholder="Search terms&#8230;" style="padding-left:40px" aria-label="Search glossary">
           </div>
           <div id="glo-list">
-            <div class="term"><span class="klabel">Charting</span><b style="display:block;margin-top:3px">Basic Infertile Pattern (BIP)</b><p>Your personal baseline on infertile days — consistently dry for some, habitual cell slough for others. Any change from it is your point of change. Taught in Skill 4.</p></div>
+            <div class="term"><span class="klabel">Charting</span><b style="display:block;margin-top:3px">Basic Infertile Pattern (BIP)</b><p>Your personal baseline on infertile days &#8212; consistently dry for some, habitual cell slough for others. Any change from it is your point of change. Taught in Skill 4.</p></div>
             <div class="term"><span class="klabel">Mucus</span><b style="display:block;margin-top:3px">Peak Day</b><p>The last day of peak-quality mucus (clear, stretchy, wet, slippery). Identified the day after, when quality drops. Justisse counts 4 days after it.</p></div>
-            <div class="term"><span class="klabel">Charting</span><b style="display:block;margin-top:3px">Point of Change</b><p>The first observation different from your BIP — the day your fertile window opens.</p></div>
-            <div class="term"><span class="klabel">Temperature</span><b style="display:block;margin-top:3px">Coverline</b><p>A reference line you draw 0.05 °C above the highest of the six temperatures before your shift. Three temps above it help confirm ovulation has passed.</p></div>
-            <div class="term"><span class="klabel">Mucus</span><b style="display:block;margin-top:3px">Cell slough</b><p>Pasty, crumbly, white-yellow discharge. Commonly confused with fertile mucus — if it's habitual and doesn't change with your cycle, it may be part of your BIP. Ask your practitioner.</p></div>
+            <div class="term"><span class="klabel">Charting</span><b style="display:block;margin-top:3px">Point of Change</b><p>The first observation different from your BIP &#8212; the day your fertile window opens.</p></div>
+            <div class="term"><span class="klabel">Temperature</span><b style="display:block;margin-top:3px">Coverline</b><p>A reference line you draw 0.05 &#176;C above the highest of the six temperatures before your shift. Three temps above it help confirm ovulation has passed.</p></div>
+            <div class="term"><span class="klabel">Mucus</span><b style="display:block;margin-top:3px">Cell slough</b><p>Pasty, crumbly, white-yellow discharge. Commonly confused with fertile mucus &#8212; if it's habitual and doesn't change with your cycle, it may be part of your BIP. Ask your practitioner.</p></div>
             <div class="term"><span class="klabel">Method</span><b style="display:block;margin-top:3px">The double-check</b><p>Justisse confirms ovulation only when both the Peak Day count and the temperature shift agree. Cross-checking is what makes symptothermal methods so effective.</p></div>
-            <div class="term"><span class="klabel">Method</span><b style="display:block;margin-top:3px">HRHP</b><p>Holistic Reproductive Health Practitioner — a trained Justisse educator. Recommended, especially for pregnancy avoidance. Find one at justisse.ca.</p></div>
-            <div class="term"><span class="klabel">Cycle</span><b style="display:block;margin-top:3px">Luteal phase</b><p>The days between ovulation and your next period, driven by progesterone — the reason your temperature stays high.</p></div>
+            <div class="term"><span class="klabel">Method</span><b style="display:block;margin-top:3px">HRHP</b><p>Holistic Reproductive Health Practitioner &#8212; a trained Justisse educator. Recommended, especially for pregnancy avoidance. Find one at justisse.ca.</p></div>
+            <div class="term"><span class="klabel">Cycle</span><b style="display:block;margin-top:3px">Luteal phase</b><p>The days between ovulation and your next period, driven by progesterone &#8212; the reason your temperature stays high.</p></div>
           </div>
-          <p id="glo-empty" hidden style="font-size:13px;color:var(--ink2);text-align:center;margin-top:20px">No terms match — try "peak" or "BIP".</p>
+          <p id="glo-empty" hidden style="font-size:13px;color:var(--ink2);text-align:center;margin-top:20px">No terms match &#8212; try "peak" or "BIP".</p>
         </div>
       </div>
     </div></div></div>
   </div>
 </section>
 
-<!-- ══════════ 11 · SETTINGS & EXPORT ══════════ -->
+<!-- ========== 11 &#183; SETTINGS & EXPORT ========== -->
 <section class="exhibit" id="ex-settings">
   <div class="x-wrap ex-grid">
     <div class="ex-cap">
       <p class="ex-num">11</p>
       <h3>Settings &amp; practitioner export <span class="new">NEW</span></h3>
-      <p>The screen the current app promises but doesn't have. Change your goal (for real this time), clear the sample cycle, and — the trust keystone — <strong>own your data</strong>: a clean chart PDF for your practitioner and a full JSON backup, both generated on-device. The privacy architecture finally gets a user interface.</p>
+      <p>The screen the current app promises but doesn't have. Change your goal (for real this time), clear the sample cycle, and &#8212; the trust keystone &#8212; <strong>own your data</strong>: a clean chart PDF for your practitioner and a full JSON backup, both generated on-device. The privacy architecture finally gets a user interface.</p>
       <ul>
-        <li>Goal, units, theme, sample data — all changeable</li>
+        <li>Goal, units, theme, sample data &#8212; all changeable</li>
         <li>Share sheet with "nothing leaves this device unless you send it"</li>
-        <li>Delete everything, no questions asked — it's your body's data</li>
+        <li>Delete everything, no questions asked &#8212; it's your body's data</li>
       </ul>
       <div class="ex-fix"><span class="lead">Addresses</span><span>U-1</span><span>U-2</span><span>N-6</span><span>N-7</span></div>
     </div>
@@ -997,7 +998,7 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
           <p class="klabel" style="margin-top:18px">Charting</p>
           <div class="set-group">
             <button class="set-row"><span class="ic" style="background:var(--acc)"><svg style="width:17px;height:17px"><use href="#i-heart"/></svg></span><b>My goal</b><small>Body literacy</small><svg class="chev" style="width:16px;height:16px"><use href="#i-chev"/></svg></button>
-            <button class="set-row"><span class="ic" style="background:var(--m-wet)"><svg style="width:17px;height:17px"><use href="#i-therm"/></svg></span><b>Temperature units</b><small>°C</small><svg class="chev" style="width:16px;height:16px"><use href="#i-chev"/></svg></button>
+            <button class="set-row"><span class="ic" style="background:var(--m-wet)"><svg style="width:17px;height:17px"><use href="#i-therm"/></svg></span><b>Temperature units</b><small>&#176;C</small><svg class="chev" style="width:16px;height:16px"><use href="#i-chev"/></svg></button>
             <button class="set-row"><span class="ic" style="background:var(--gold)"><svg style="width:17px;height:17px"><use href="#i-chart"/></svg></span><b>Sample cycle</b><small>Visible in Learn only</small><svg class="chev" style="width:16px;height:16px"><use href="#i-chev"/></svg></button>
           </div>
           <p class="klabel" style="margin-top:18px">Your data</p>
@@ -1007,7 +1008,7 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
             <button class="set-row"><span class="ic" style="background:var(--bad)"><svg style="width:17px;height:17px"><use href="#i-flag"/></svg></span><b style="color:var(--bad)">Delete everything</b><svg class="chev" style="width:16px;height:16px"><use href="#i-chev"/></svg></button>
           </div>
           <div class="chart-thumb">
-            <p class="klabel" style="color:var(--acc)">Preview · Cycle 5 chart for your practitioner</p>
+            <p class="klabel" style="color:var(--acc)">Preview &#183; Cycle 5 chart for your practitioner</p>
             <div style="display:flex;gap:3px;align-items:flex-end;height:52px;margin-top:12px" aria-hidden="true">
               <div style="flex:1;height:30%;background:var(--blood);border-radius:2px;opacity:.8"></div>
               <div style="flex:1;height:30%;background:var(--blood);border-radius:2px;opacity:.6"></div>
@@ -1022,64 +1023,64 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
               <div style="flex:1;height:26%;background:var(--m-dry);border-radius:2px"></div>
               <div style="flex:1;height:26%;background:var(--m-dry);border-radius:2px"></div>
             </div>
-            <p style="font-size:11px;color:var(--ink2);margin-top:8px">Includes your marks, your coverline, your flagged questions — and nothing you didn't choose.</p>
+            <p style="font-size:11px;color:var(--ink2);margin-top:8px">Includes your marks, your coverline, your flagged questions &#8212; and nothing you didn't choose.</p>
           </div>
-          <div class="note"><svg><use href="#i-lock"/></svg><p><strong>Generated on this device.</strong> Nothing is uploaded, ever. Sharing uses the iOS share sheet — you choose where it goes.</p></div>
+          <div class="note"><svg><use href="#i-lock"/></svg><p><strong>Generated on this device.</strong> Nothing is uploaded, ever. Sharing uses the iOS share sheet &#8212; you choose where it goes.</p></div>
         </div>
       </div>
     </div></div></div>
   </div>
 </section>
 
-<!-- ══════════ 12 · LIBRARY / ARTICLE ══════════ -->
+<!-- ========== 12 &#183; LIBRARY / ARTICLE ========== -->
 <section class="exhibit" id="ex-article">
   <div class="x-wrap ex-grid">
     <div class="ex-cap">
       <p class="ex-num">12</p>
-      <h3>The Library — citations you can touch</h3>
-      <p>Fourteen evidence-based articles are a real asset; they now read like the editorial product they are. New York serif at a comfortable measure, a reading-progress thread, and <strong>tappable citations that reveal their source inline</strong> — no more decorative superscripts.</p>
+      <h3>The Library &#8212; citations you can touch</h3>
+      <p>Fourteen evidence-based articles are a real asset; they now read like the editorial product they are. New York serif at a comfortable measure, a reading-progress thread, and <strong>tappable citations that reveal their source inline</strong> &#8212; no more decorative superscripts.</p>
       <ul>
-        <li>Serif voice reserved for reading surfaces — it means "slow down"</li>
+        <li>Serif voice reserved for reading surfaces &#8212; it means "slow down"</li>
         <li>Sources open in place; the full list stays at the end</li>
         <li>Related lessons linked at the point of relevance</li>
       </ul>
       <div class="ex-fix"><span class="lead">Addresses</span><span>C-1</span><span>A-3</span></div>
-      <p class="ex-try">Try it: tap the citation marker ¹ in the text.</p>
+      <p class="ex-try">Try it: tap the citation marker &#185; in the text.</p>
     </div>
     <div class="ex-stage"><div class="pwrap"><div class="phone" data-active-tab="library">
       <div class="screen">
         <div class="pv art">
           <div class="crow" style="margin-bottom:14px">
             <button class="chip" style="min-height:36px;padding:6px 10px"><svg style="width:16px;height:16px"><use href="#i-back"/></svg>Library</button>
-            <span class="chip" style="min-height:32px;padding:5px 11px;font-size:11px">Myth busting · 8 min</span>
+            <span class="chip" style="min-height:32px;padding:5px 11px;font-size:11px">Myth busting &#183; 8 min</span>
           </div>
-          <h1>"Isn't this just the rhythm method?" — No. Here's the difference.</h1>
+          <h1>"Isn't this just the rhythm method?" &#8212; No. Here's the difference.</h1>
           <p style="font-size:12.5px;color:var(--ink2);margin-top:10px;font-family:var(--sans)">For skeptics, partners, and anyone who got the 1950s version in health class.</p>
           <div class="body">
-            <p>The rhythm method predicts future fertility from past cycle lengths — a calendar guess. Fertility awareness methods observe <strong>today's biomarkers</strong>: cervical mucus, waking temperature, cervical position. One extrapolates; the other measures.<sup id="cite-1">[1]</sup></p>
-            <div class="cite" id="cite-box" hidden><p><strong style="color:var(--ink)">[1]</strong> Peragallo Urrutia R, et al. Effectiveness of Fertility Awareness–Based Methods for Pregnancy Prevention. <em>Obstetrics &amp; Gynecology.</em> 2018;132(3):591–604.</p></div>
-            <p>Used with instruction, modern symptothermal methods reach perfect-use effectiveness comparable to hormonal contraception — with typical use, the range is wider, which is exactly why this app keeps telling you to learn with a practitioner.</p>
+            <p>The rhythm method predicts future fertility from past cycle lengths &#8212; a calendar guess. Fertility awareness methods observe <strong>today's biomarkers</strong>: cervical mucus, waking temperature, cervical position. One extrapolates; the other measures.<sup id="cite-1">[1]</sup></p>
+            <div class="cite" id="cite-box" hidden><p><strong style="color:var(--ink)">[1]</strong> Peragallo Urrutia R, et al. Effectiveness of Fertility Awareness&#8211;Based Methods for Pregnancy Prevention. <em>Obstetrics &amp; Gynecology.</em> 2018;132(3):591&#8211;604.</p></div>
+            <p>Used with instruction, modern symptothermal methods reach perfect-use effectiveness comparable to hormonal contraception &#8212; with typical use, the range is wider, which is exactly why this app keeps telling you to learn with a practitioner.</p>
           </div>
-          <div class="note" style="margin-top:18px"><svg><use href="#i-book"/></svg><p><strong>Related lesson:</strong> Skill 2 · Temperature — why the shift confirms, never predicts.</p></div>
+          <div class="note" style="margin-top:18px"><svg><use href="#i-book"/></svg><p><strong>Related lesson:</strong> Skill 2 &#183; Temperature &#8212; why the shift confirms, never predicts.</p></div>
         </div>
       </div>
     </div></div></div>
   </div>
 </section>
 
-<!-- ══════════ THEMES SIDE-BY-SIDE ══════════ -->
+<!-- ========== THEMES SIDE-BY-SIDE ========== -->
 <section class="exhibit" id="themes">
   <div class="x-wrap">
     <p class="ex-num">Both themes, same tokens</p>
-    <h3 style="font-size:24px;font-weight:800;letter-spacing:-.5px">Night for 6 a.m. · Day for everything else</h3>
-    <p style="font-size:14px;color:var(--pg-ink2);max-width:70ch;margin-top:10px">The entire system is token-driven — these two frames are the <em>same markup</em> as Screen 01, force-set to each theme. Night is the hero: this app is used in bed, before sunrise, thermometer in hand. Day is a lilac-tinted daylight twin, not an inversion.</p>
+    <h3 style="font-size:24px;font-weight:800;letter-spacing:-.5px">Night for 6 a.m. &#183; Day for everything else</h3>
+    <p style="font-size:14px;color:var(--pg-ink2);max-width:70ch;margin-top:10px">The entire system is token-driven &#8212; these two frames are the <em>same markup</em> as Screen 01, force-set to each theme. Night is the hero: this app is used in bed, before sunrise, thermometer in hand. Day is a lilac-tinted daylight twin, not an inversion.</p>
     <div class="ex-stage mini" style="margin-top:26px" id="themes-stage"></div>
   </div>
 </section>
 
 <footer class="x-foot">
   <div class="x-wrap">
-    <p><strong>LunaChart · Lunar redesign proposal.</strong> Companion to the full UX &amp; FAM pedagogy audit — every "Addresses" chip above maps to a finding ID in that report. The philosophy is unchanged: an educational charting notebook, not a medical device or contraceptive; no fertility verdicts, no cloud, practitioner-first. Mockup data is the app's own narrated sample cycle (Feb–Mar 2026).</p>
+    <p><strong>LunaChart &#183; Lunar redesign proposal.</strong> Companion to the full UX &amp; FAM pedagogy audit &#8212; every "Addresses" chip above maps to a finding ID in that report. The philosophy is unchanged: an educational charting notebook, not a medical device or contraceptive; no fertility verdicts, no cloud, practitioner-first. Mockup data is the app's own narrated sample cycle (Feb&#8211;Mar 2026).</p>
   </div>
 </footer>
 <script>
@@ -1087,7 +1088,7 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
 "use strict";
 var doc=document, root=doc.documentElement;
 
-/* ── theme ── */
+/* -- theme -- */
 if(!root.dataset.theme) root.dataset.theme="dark";
 var thD=doc.getElementById("th-dark"), thL=doc.getElementById("th-light");
 function setTheme(t){ root.dataset.theme=t;
@@ -1098,7 +1099,7 @@ thD.addEventListener("click",function(){setTheme("dark")});
 thL.addEventListener("click",function(){setTheme("light")});
 setTheme(root.dataset.theme);
 
-/* ── clone phone chrome ── */
+/* -- clone phone chrome -- */
 var tplS=doc.getElementById("tpl-status"), tplT=doc.getElementById("tpl-tab");
 doc.querySelectorAll(".phone").forEach(function(ph){
   ph.appendChild(tplS.content.cloneNode(true));
@@ -1109,28 +1110,28 @@ doc.querySelectorAll(".phone").forEach(function(ph){
   }
 });
 
-/* ── chart data (the app's narrated sample cycle, Feb 15 – Mar 15 2026) ── */
+/* -- chart data (the app's narrated sample cycle, Feb 15 \u2013 Mar 15 2026) -- */
 var CL=36.38, TMIN=36.14, TMAX=36.66;
 var DATA=[
- {d:"Feb 15",cd:1, t:36.28,m:"B",bl:"Heavy",mu:"—",note:"Cycle Day 1 — full flow"},
- {d:"Feb 16",cd:2, t:36.31,m:"B",bl:"Heavy",mu:"—",note:""},
- {d:"Feb 17",cd:3, t:36.25,m:"B",bl:"Medium",mu:"—",note:""},
+ {d:"Feb 15",cd:1, t:36.28,m:"B",bl:"Heavy",mu:"\u2014",note:"Cycle Day 1 \u2014 full flow"},
+ {d:"Feb 16",cd:2, t:36.31,m:"B",bl:"Heavy",mu:"\u2014",note:""},
+ {d:"Feb 17",cd:3, t:36.25,m:"B",bl:"Medium",mu:"\u2014",note:""},
  {d:"Feb 18",cd:4, t:36.30,m:"B",bl:"Light",mu:"Moist",note:"Flow tapering"},
- {d:"Feb 19",cd:5, t:36.27,m:"B",bl:"Spotting",mu:"—",dist:true,note:"You flagged this temp — short sleep"},
+ {d:"Feb 19",cd:5, t:36.27,m:"B",bl:"Spotting",mu:"\u2014",dist:true,note:"You flagged this temp \u2014 short sleep"},
  {d:"Feb 20",cd:6, t:36.32,m:"D",bl:"None",mu:"Dry",note:"First fully dry day"},
  {d:"Feb 21",cd:7, t:36.29,m:"D",bl:"None",mu:"Dry",note:"Consistent with your BIP"},
  {d:"Feb 22",cd:8, t:36.33,m:"D",bl:"None",mu:"Dry",note:""},
- {d:"Feb 23",cd:9, t:36.28,m:"D",bl:"None",mu:"Cell slough",note:"Habitual for you — you noted it"},
- {d:"Feb 24",cd:10,t:36.30,m:"MO",bl:"None",mu:"Moist · tacky · breaks",poc:true,note:"You marked Point of Change"},
- {d:"Feb 25",cd:11,t:36.26,m:"W",bl:"None",mu:"Moist · creamy · <1 cm",note:"Building"},
- {d:"Feb 26",cd:12,t:36.31,m:"W",bl:"None",mu:"Wet · creamy · <1 cm",note:""},
- {d:"Feb 27",cd:13,t:36.28,m:"W",bl:"None",mu:"Wet · clear · 1–3 cm",note:"Getting close to peak"},
- {d:"Feb 28",cd:14,t:36.25,m:"P",bl:"None",mu:"Slippery · egg-white · 3+ cm",note:"Cervix high, soft, open"},
- {d:"Mar 1",cd:15,t:36.22,m:"P",bl:"None",mu:"Slippery · egg-white · 3+ cm",peak:true,note:"Last day of peak mucus — identified Mar 2"},
- {d:"Mar 2",cd:16,t:36.48,m:"MO",bl:"None",mu:"Moist · tacky · breaks",note:"Peak+1 · quality dropped, temp jumped"},
- {d:"Mar 3",cd:17,t:36.52,m:"D",bl:"None",mu:"Dry",note:"Peak+2 · second temp above your line"},
- {d:"Mar 4",cd:18,t:36.55,m:"D",bl:"None",mu:"Dry",note:"Peak+3 · third high temp"},
- {d:"Mar 5",cd:19,t:36.58,m:"D",bl:"None",mu:"Dry",note:"Peak+4 evening · your double-check agrees"},
+ {d:"Feb 23",cd:9, t:36.28,m:"D",bl:"None",mu:"Cell slough",note:"Habitual for you \u2014 you noted it"},
+ {d:"Feb 24",cd:10,t:36.30,m:"MO",bl:"None",mu:"Moist \u00B7 tacky \u00B7 breaks",poc:true,note:"You marked Point of Change"},
+ {d:"Feb 25",cd:11,t:36.26,m:"W",bl:"None",mu:"Moist \u00B7 creamy \u00B7 <1 cm",note:"Building"},
+ {d:"Feb 26",cd:12,t:36.31,m:"W",bl:"None",mu:"Wet \u00B7 creamy \u00B7 <1 cm",note:""},
+ {d:"Feb 27",cd:13,t:36.28,m:"W",bl:"None",mu:"Wet \u00B7 clear \u00B7 1\u20133 cm",note:"Getting close to peak"},
+ {d:"Feb 28",cd:14,t:36.25,m:"P",bl:"None",mu:"Slippery \u00B7 egg-white \u00B7 3+ cm",note:"Cervix high, soft, open"},
+ {d:"Mar 1",cd:15,t:36.22,m:"P",bl:"None",mu:"Slippery \u00B7 egg-white \u00B7 3+ cm",peak:true,note:"Last day of peak mucus \u2014 identified Mar 2"},
+ {d:"Mar 2",cd:16,t:36.48,m:"MO",bl:"None",mu:"Moist \u00B7 tacky \u00B7 breaks",note:"Peak+1 \u00B7 quality dropped, temp jumped"},
+ {d:"Mar 3",cd:17,t:36.52,m:"D",bl:"None",mu:"Dry",note:"Peak+2 \u00B7 second temp above your line"},
+ {d:"Mar 4",cd:18,t:36.55,m:"D",bl:"None",mu:"Dry",note:"Peak+3 \u00B7 third high temp"},
+ {d:"Mar 5",cd:19,t:36.58,m:"D",bl:"None",mu:"Dry",note:"Peak+4 evening \u00B7 your double-check agrees"},
  {d:"Mar 6",cd:20,t:36.54,m:"D",bl:"None",mu:"Dry",note:""},
  {d:"Mar 7",cd:21,t:36.56,m:"D",bl:"None",mu:"Dry",note:""},
  {d:"Mar 8",cd:22,t:36.52,m:"D",bl:"None",mu:"Cell slough",note:"Normal luteal observation for you"},
@@ -1140,7 +1141,7 @@ var DATA=[
  {d:"Mar 12",cd:26,t:36.48,m:"D",bl:"None",mu:"Dry",note:""},
  {d:"Mar 13",cd:27,t:36.45,m:"D",bl:"None",mu:"Dry",note:"Temps easing down"},
  {d:"Mar 14",cd:28,t:36.38,m:"D",bl:"None",mu:"Dry",note:""},
- {d:"Mar 15",cd:29,t:36.30,m:"B",bl:"Spotting",mu:"—",note:"Spotting — not CD 1 until full flow"}
+ {d:"Mar 15",cd:29,t:36.30,m:"B",bl:"Spotting",mu:"\u2014",note:"Spotting \u2014 not CD 1 until full flow"}
 ];
 var STAMP={B:"#i-drop",D:"#m-new",MO:"#m-cres",W:"#m-half",P:"#m-full"};
 var SCOL={B:"var(--blood)",D:"var(--m-dry)",MO:"var(--m-moist)",W:"var(--m-wet)",P:"var(--m-peak)"};
@@ -1183,21 +1184,21 @@ function buildChart(){
     var r=ev.target.closest("[data-day]"); if(!r) return;
     var i=+r.getAttribute("data-day"), e=DATA[i];
     var sel=doc.getElementById("csel"); if(sel) sel.setAttribute("x",i*CW);
-    doc.getElementById("dd-date").textContent=e.d+" · Cycle Day "+e.cd;
+    doc.getElementById("dd-date").textContent=e.d+" \u00B7 Cycle Day "+e.cd;
     var marks=doc.getElementById("dd-marks");
-    marks.textContent = e.peak?"★ You marked Peak Day": e.poc?"⬆ You marked Point of Change": e.dist?"○ You excluded this temp":"No marks — your call stands";
+    marks.textContent = e.peak?"\u2605 You marked Peak Day": e.poc?"\u2B06 You marked Point of Change": e.dist?"\u25CB You excluded this temp":"No marks \u2014 your call stands";
     marks.style.color = e.peak?"var(--coral)": e.poc||e.dist?"var(--acc)":"var(--ink2)";
     doc.getElementById("dd-mucus").textContent=e.mu;
-    doc.getElementById("dd-bbt").textContent=e.t.toFixed(2)+" °C"+(e.dist?" · excluded":"");
+    doc.getElementById("dd-bbt").textContent=e.t.toFixed(2)+" \u00B0C"+(e.dist?" \u00B7 excluded":"");
     doc.getElementById("dd-bleed").textContent=e.bl;
-    doc.getElementById("dd-note").textContent=e.note||"—";
+    doc.getElementById("dd-note").textContent=e.note||"\u2014";
   });
   // start scrolled so the peak/shift story is in view
   holder.scrollLeft=140;
 }
 buildChart();
 
-/* ── frame scaling ── */
+/* -- frame scaling -- */
 function fit(){
   doc.querySelectorAll(".pwrap").forEach(function(w){
     var ph=w.querySelector(".phone"); if(!ph) return;
@@ -1211,12 +1212,12 @@ function fit(){
 }
 addEventListener("resize",fit);
 
-/* ── themes side-by-side (clones of screen 01) ── */
+/* -- themes side-by-side (clones of screen 01) -- */
 (function(){
   var stage=doc.getElementById("themes-stage");
   var src=doc.querySelector("#ex-today .phone");
   if(!stage||!src) return;
-  [["dark","Night — the hero"],["light","Day — moonstone daylight"]].forEach(function(pair){
+  [["dark","Night \u2014 the hero"],["light","Day \u2014 moonstone daylight"]].forEach(function(pair){
     var wrap=doc.createElement("div"); wrap.className="pwrap"; wrap.setAttribute("data-scale","0.62");
     var clone=src.cloneNode(true);
     clone.setAttribute("data-theme",pair[0]);
@@ -1232,7 +1233,7 @@ addEventListener("resize",fit);
 })();
 fit();
 
-/* ── toast ── */
+/* -- toast -- */
 var toastTimer=null;
 function toast(){
   var t=doc.getElementById("today-toast"); if(!t) return;
@@ -1240,7 +1241,7 @@ function toast(){
   toastTimer=setTimeout(function(){t.hidden=true},2200);
 }
 
-/* ── onboarding pager ── */
+/* -- onboarding pager -- */
 var obI=0, obPages=doc.getElementById("ob-pages"), obDots=doc.getElementById("ob-dots"),
     obNext=doc.getElementById("ob-next"), obBack=doc.getElementById("ob-back");
 function obGo(i){
@@ -1253,7 +1254,7 @@ function obGo(i){
 if(obNext){ obNext.addEventListener("click",function(){obGo(obI===2?0:obI+1)});
   obBack.addEventListener("click",function(){obGo(obI-1)}); }
 
-/* ── glossary filter ── */
+/* -- glossary filter -- */
 var glo=doc.getElementById("glo-search");
 if(glo){ glo.addEventListener("input",function(){
   var q=glo.value.trim().toLowerCase(), any=false;
@@ -1264,7 +1265,7 @@ if(glo){ glo.addEventListener("input",function(){
   doc.getElementById("glo-empty").hidden=any;
 });}
 
-/* ── delegated interactions ── */
+/* -- delegated interactions -- */
 doc.addEventListener("click",function(ev){
   var t=ev.target;
 
@@ -1288,7 +1289,7 @@ doc.addEventListener("click",function(ev){
   }
   if(t.closest("#peak-yes")){ doc.getElementById("peak-confirm").classList.remove("show");
     var pr=doc.getElementById("peak-row"); pr.classList.add("on");
-    doc.getElementById("peak-sub").textContent="Marked — day 1 of your 4-day count"; toast(); return; }
+    doc.getElementById("peak-sub").textContent="Marked \u2014 day 1 of your 4-day count"; toast(); return; }
   if(t.closest("#peak-no")){ doc.getElementById("peak-confirm").classList.remove("show"); return; }
   if(t.closest("#poc-row")){ t.closest("#poc-row").classList.toggle("on"); toast(); return; }
   if(t.closest("#dist-chip")){ t.closest("#dist-chip").classList.toggle("on"); toast(); return; }
