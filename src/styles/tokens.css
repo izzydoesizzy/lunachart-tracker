@@ -1,0 +1,50 @@
+/* ============================================================
+   LUNAR DESIGN TOKENS
+   Night (dark) is the base theme; Day (light) via media query.
+   [data-theme="dark"|"light"] on <html> forces either
+   (Settings: System / Night / Day).
+   ============================================================ */
+:root{
+  --bg:#12142B; --sur:#1A1D3A; --sur2:#232750; --line:rgba(169,164,242,.16);
+  --ink:#ECEDF9; --ink2:#A6A9CE; --ink3:#8286AD;
+  --acc:#A9A2F2; --acc-ink:#14122E; --acc-soft:rgba(169,162,242,.14);
+  --coral:#F2907E; --coral-soft:rgba(242,144,126,.14);
+  --gold:#E4C489; --ok:#8CD3A4; --ok-soft:rgba(140,211,164,.14); --bad:#E77B6C;
+  --m-dry:#8B8FB0; --m-moist:#8FB7D9; --m-wet:#64AEDF; --m-peak:#7FE0EF;
+  --blood:#E4685C;
+  --shadow:0 24px 60px rgba(0,0,0,.5);
+  --serif:ui-serif,"New York",Georgia,'Times New Roman',serif;
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#F5F5FC; --sur:#FFFFFF; --sur2:#ECEDF8; --line:rgba(35,36,74,.12);
+    --ink:#23244A; --ink2:#565A85; --ink3:#767AA3;
+    --acc:#5A50C7; --acc-ink:#FFFFFF; --acc-soft:rgba(90,80,199,.10);
+    --coral:#D9604F; --coral-soft:rgba(217,96,79,.12);
+    --gold:#A97F2E; --ok:#2E8B57; --ok-soft:rgba(46,139,87,.12); --bad:#C7513F;
+    --m-dry:#8A8DA8; --m-moist:#5B93BD; --m-wet:#2F7EB8; --m-peak:#188FAB;
+    --blood:#C74A3C;
+    --shadow:0 20px 50px rgba(35,36,74,.18);
+  }
+}
+[data-theme="dark"]{
+  --bg:#12142B; --sur:#1A1D3A; --sur2:#232750; --line:rgba(169,164,242,.16);
+  --ink:#ECEDF9; --ink2:#A6A9CE; --ink3:#8286AD;
+  --acc:#A9A2F2; --acc-ink:#14122E; --acc-soft:rgba(169,162,242,.14);
+  --coral:#F2907E; --coral-soft:rgba(242,144,126,.14);
+  --gold:#E4C489; --ok:#8CD3A4; --ok-soft:rgba(140,211,164,.14); --bad:#E77B6C;
+  --m-dry:#8B8FB0; --m-moist:#8FB7D9; --m-wet:#64AEDF; --m-peak:#7FE0EF;
+  --blood:#E4685C;
+  --shadow:0 24px 60px rgba(0,0,0,.5);
+}
+[data-theme="light"]{
+  --bg:#F5F5FC; --sur:#FFFFFF; --sur2:#ECEDF8; --line:rgba(35,36,74,.12);
+  --ink:#23244A; --ink2:#565A85; --ink3:#767AA3;
+  --acc:#5A50C7; --acc-ink:#FFFFFF; --acc-soft:rgba(90,80,199,.10);
+  --coral:#D9604F; --coral-soft:rgba(217,96,79,.12);
+  --gold:#A97F2E; --ok:#2E8B57; --ok-soft:rgba(46,139,87,.12); --bad:#C7513F;
+  --m-dry:#8A8DA8; --m-moist:#5B93BD; --m-wet:#2F7EB8; --m-peak:#188FAB;
+  --blood:#C74A3C;
+  --shadow:0 20px 50px rgba(35,36,74,.18);
+}

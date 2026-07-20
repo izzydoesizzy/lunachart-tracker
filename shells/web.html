@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="LunaChart — A privacy-first Justisse Method fertility awareness tracker. Learn to read your body's fertility signals with science-backed education.">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#12142B">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F5FC">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>LunaChart — Fertility Awareness Tracker</title>
+  <script>
+  // Theme boot: apply saved theme before first paint (no flash)
+  try{
+    var s=JSON.parse(localStorage.getItem('lc-settings')||'{}');
+    if(s.theme==='night')document.documentElement.dataset.theme='dark';
+    else if(s.theme==='day')document.documentElement.dataset.theme='light';
+  }catch(e){}
+  </script>
+  <style>
+/*@STYLES*/
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+<!--@ICONS-->
+  <script src="vendor/react.production.min.js"></script>
+  <script src="vendor/react-dom.production.min.js"></script>
+  <script>
+if (!window.storage) {
+  window.storage = {
+    get: async (k) => { const v = localStorage.getItem(k); return v ? { value: v } : null; },
+    set: async (k, v) => { localStorage.setItem(k, v); },
+    remove: async (k) => { localStorage.removeItem(k); },
+  };
+}
+const PLATFORM = "web";
+const BUILD = "/*@BUILD*/";
+const { useState, useEffect, useRef, useMemo, useCallback } = React;
+/*@CONTENT*/
+  </script>
+  <script>
+/*@APP*/
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js'); }
+  </script>
+</body>
+</html>

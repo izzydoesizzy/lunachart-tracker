@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lunachart-69cbd39e';
+const CACHE_NAME = 'lunachart-@HASH';
 const ASSETS = [
   './', './index.html', './manifest.json', './icon-192.png', './icon-512.png',
   './vendor/react.production.min.js', './vendor/react-dom.production.min.js'

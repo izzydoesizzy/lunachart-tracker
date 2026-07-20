@@ -1,106 +1,72 @@
 # LunaChart
 
-**A mobile-first fertility awareness tracker built on the Justisse Method**
+**A mobile-first fertility awareness tracker built on the Justisse Method — redesigned in the "Lunar" design language.**
 
-[![GitHub Pages](https://img.shields.io/badge/demo-live-brightgreen)](https://izzydoesizzy.github.io/lunachart-tracker/)
+LunaChart is an educational tool and daily charting app that teaches the Justisse Method of Fertility Awareness — a secular, science-based symptothermal method founded in 1987 by Geraldine Matus. It combines interactive lessons, chart-reading practice drills, a detailed biomarker tracker, and an evidence-based article library.
 
-LunaChart is an educational tool and daily charting app that teaches the Justisse Method of Fertility Awareness — a secular, science-based symptothermal method founded in 1987 by Geraldine Matus. The app combines interactive skill-building modules with a detailed biomarker tracker and an evidence-based article library.
-
-> **Important:** LunaChart is an educational tool and observation recorder, not a medical device, contraceptive, or replacement for professional instruction. It is not FDA-cleared. It is not affiliated with Justisse College International. If you are charting for pregnancy avoidance, work with a trained Justisse HRHP (Holistic Reproductive Health Practitioner). Find one at [justisse.ca](https://justisse.ca/chart-your-cycle/).
-
----
+> **Important:** LunaChart is an educational tool and observation recorder, not a medical device, contraceptive, or replacement for professional instruction. It is not FDA-cleared. It is not affiliated with Justisse College International. If you are charting for pregnancy avoidance, work with a trained Justisse HRHP — find one at [justisse.ca](https://justisse.ca/chart-your-cycle/).
 
 ## Live Demo
 
 [https://izzydoesizzy.github.io/lunachart-tracker/](https://izzydoesizzy.github.io/lunachart-tracker/)
 
----
-
 ## What It Does
 
-### Interactive Skills Wizard
-Five sequential learning modules that teach the method *before* users start tracking:
-1. **Welcome to Body Literacy** — What the Justisse Method is, its secular/science foundation, the 3-cycle commitment
-2. **Skill 1: Cervical Mucus** (6 steps) — The observational routine, sensation/appearance/stretchiness categories, the "most fertile" recording rule, Peak Day identification
-3. **Skill 2: Basal Body Temperature** (4 steps) — Measurement protocol, shift identification, the double-check rule
-4. **Skill 3: Cervical Position** (2 steps) — Height, texture, openness changes across the cycle
-5. **Skill 4: Reading Your Chart** (4 steps) — BIP identification, fertile window rules, cycle day counting, when to seek practitioner help
-
-Each step includes a "Practitioner Tip" with contextual guidance. Progress persists across sessions.
-
-### Daily Tracker
-Records all Justisse-specific biomarkers:
-- **Cervical mucus** — Three separate fields following the Justisse standard: sensation (dry/moist/wet/slippery), appearance (nothing/cell slough/tacky/creamy/clear/egg-white/watery), stretchiness (none/breaks/< 1cm/1-3cm/3+cm)
-- **Basal body temperature** — Numeric entry with disturbed-temperature flagging
-- **Cervical position** — Height, texture, and openness (optional)
-- **Bleeding** — None/spotting/light/medium/heavy
-- **Manual interpretive markers** — Peak Day and Point of Change buttons
-- **Notes** — Freeform field for symptoms, energy, mood, medications
-
-### Cycle Chart
-- SVG-based BBT temperature graph with plotted data points, connecting lines, Peak Day labels, Point of Change markers, and a dashed coverline
-- Tappable day-by-day strip with detail panels showing all four biomarker categories
-- Chart legend explaining all symbols and their Justisse Method significance
-
-### Blog / Article Library
-14 long-form SEO-optimized articles with inline superscript citation numbers and full source footers covering method education, myth busting, transition guides, how-tos, special circumstances, privacy, relationships, and life stages.
-
-### Landing Page with Honest Positioning
-- **What LunaChart Does** and **Does Not Do** — transparent feature cards
-- **Is LunaChart Right for You?** — recommends competitors by name where they're genuinely better
-- **Competitive Comparison Table** — 17 features x 4 competitors with honest ratings
-- **The Justisse Method in 60 Seconds** — six-step visual walkthrough
-
----
+- **Teaches before it tracks** — 5 lesson modules with practitioner tips and knowledge checks, 6 chart-reading drills (find Peak Day, spot the Point of Change, delayed ovulation, double peak, disturbed temps, cell slough vs. change), a searchable glossary, and a narrated worked-example cycle.
+- **Records three biomarkers** — cervical mucus (Justisse's sensation + appearance + stretch), BBT with disturbed-temperature flagging, cervical position — plus bleeding, notes, and per-day practitioner flags.
+- **A real FAM chart** — temperature dots, moon-stamp mucus row, and bleeding aligned per column; per-cycle pagination; a **coverline you draw yourself** (drag or arrow keys). The app never draws one for you.
+- **Mirrors, never interprets** — the Today banner restates what *you* recorded and marked. Marking Peak Day is a deliberate, confirmed act that starts *your* 4-day count. No fertility verdicts, ever.
+- **Guided first cycle** — phase-aware focus cards, a daily practice checklist, and 3-cycle commitment progress during cycles 1–3.
+- **Cycle review ritual** — when a cycle closes, five minutes of reflection plus your flagged questions, saved as your cycle history.
+- **Your data, actually yours** — local-only storage, JSON backup, practitioner chart export (PNG, generated on device), and delete-everything. Night + Day themes, °C/°F, changeable goal.
 
 ## What It Does NOT Do
 
-- **No fertile/infertile predictions.** The app never says "you're safe today."
-- **No automatic chart interpretation.** No auto-drawn coverlines or auto-detected temperature shifts.
-- **No practitioner replacement.** Educational foundations only.
-- **No multi-cycle analysis.** Single cycle rolling view for now.
-- **No notifications or reminders.** Building a daily habit is part of the learning process.
-- **No FDA clearance.** This is an educational tool, not a regulated medical device.
+No fertile/infertile predictions. No automatic chart interpretation (no auto coverlines, no auto Peak detection). No practitioner replacement. No accounts, no cloud, no notifications.
 
----
+## Architecture
 
-## Tech Stack
+React 18 (vendored, no CDN) + system fonts. **No network dependencies at all** — the app is fully offline on web (service worker) and iOS (WKWebView).
 
-- **React 18** (JSX, functional components with hooks, loaded via CDN)
-- **Babel standalone** for in-browser JSX transpilation
-- **localStorage** for persistent on-device data storage
-- **No external dependencies** beyond React, Google Fonts, and Babel
-- **No backend, no accounts, no cloud sync** — all data stays on the user's device
-- **Mobile-first design** — 480px max-width, touch-optimized inputs, bottom tab navigation
-
----
-
-## Getting Started
-
-```bash
-# Clone the repo
-git clone https://github.com/izzydoesizzy/lunachart-tracker.git
-cd lunachart-tracker
-
-# Open in browser
-open index.html
+```
+src/                  ← THE source of truth. Edit here only.
+  styles/             tokens.css (Lunar design tokens) + app.css
+  content/            articles, lessons + quizzes, drills, glossary,
+                      first-cycle cards, the sample cycle
+  core.js             storage, dates, cycle derivation, migration, units
+  ui.jsx, chart.jsx   primitives, overlays, the FAM chart generator
+  screens/            today, chart, learn, drills, glossary, review,
+                      settings, onboard, library, landing
+  app.jsx             root state, routing, persistence
+shells/               web.html, ios.html, sw.js templates
+vendor/               react, react-dom (UMD) + babel (build-time only)
+build.mjs             zero-dependency build script
+index.html            ← BUILD ARTIFACT (GitHub Pages entry). Never hand-edit.
+ios/…/WebAssets/      ← BUILD ARTIFACT (iOS bundle). Never hand-edit.
 ```
 
----
+### Building
 
-## Design Decisions
+```bash
+node build.mjs   # transpiles src/ (build-time Babel, no npm install needed)
+                 # → index.html, ios/…/WebAssets/index.html, sw.js
+```
 
-**Why no algorithm?** The Justisse Method's core philosophy is that the user IS the algorithm. Outsourcing fertility interpretation to software undermines body literacy.
+Commit the regenerated artifacts together with your `src/` changes. The service-worker cache key is a content hash, so deploys invalidate cleanly.
 
-**Why hardcoded sample data?** New users need to see what a completed chart looks like. The sample data doubles as a teaching tool.
+### iOS
 
-**Why recommend competitors?** Trust. Directing users to the right tool for their needs builds credibility.
+`ios/LunaChart` is a SwiftUI WKWebView wrapper (xcodegen project). It loads the built `WebAssets/index.html` fully offline and adds a native share sheet for exports via a `share` message handler. Generate the project with `xcodegen` and build in Xcode.
 
-**Why local-only storage?** Fertility data is sensitive. No accounts means no email addresses to breach, no servers to subpoena.
+## Data & migration
 
-**Why Justisse specifically?** Gold standard for secular FAE training, most detailed mucus categorization, works as both symptothermal and mucus-only.
+All data lives in `localStorage` under `lc-*` keys (schema v2). Upgrading from v1 removes the previously pre-seeded sample cycle from user data (any day you edited survives); the sample now lives as a worked example only. **Cycle Day 1 is the first full-flow day** — spotting no longer starts a cycle, matching the taught rule.
 
----
+## Design decisions
+
+- **Why no algorithm?** The Justisse Method's core philosophy is that the user IS the algorithm. The redesign enforces this in software: drills check your calls on practice charts; your real chart is never interpreted.
+- **Why local-only?** Fertility data is sensitive. No accounts, no servers — and now with export/delete so the promise has a UI.
+- **Why moon stamps?** Classic FAM paper charts use stamps. Moon phases (new = dry → full = peak) make the chart's story readable at a glance — and the moon was in the name all along.
 
 ## Sources & References
 
@@ -110,8 +76,6 @@ open index.html
 - ACOG Committee Opinion No. 651 (2015). Using the Menstrual Cycle as a Vital Sign.
 - Matus, G. (2012). Justisse Method: Fertility Awareness and Body Literacy — A User's Guide.
 
----
-
 ## License
 
-This is an independent educational project. The Justisse Method is a trademark of Justisse College International. LunaChart is not affiliated with, endorsed by, or officially connected to Justisse College International.
+Independent educational project. The Justisse Method is a trademark of Justisse College International; LunaChart is not affiliated with or endorsed by it.

@@ -6,8 +6,8 @@
   "scope": "/lunachart-tracker/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#FDFAF6",
-  "theme_color": "#FDFAF6",
+  "background_color": "#12142B",
+  "theme_color": "#12142B",
   "icons": [
     {
       "src": "icon-192.png",
