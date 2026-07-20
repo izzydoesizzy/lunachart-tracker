@@ -775,7 +775,7 @@ input.pfield,.pfield{width:100%;background:var(--sur2);border:1px solid transpar
         <div class="pv">
           <div class="dots" id="ob-dots"><i class="on"></i><i></i><i></i></div>
           <div style="display:flex;gap:10px;margin-top:16px">
-            <button class="btn-g" id="ob-back" style="flex:1;visibility:hidden">Back</button>
+            <button class="btn-g" id="ob-back" style="flex:1;display:none">Back</button>
             <button class="btn-a" id="ob-next" style="flex:2">Continue</button>
           </div>
         </div>
@@ -1248,7 +1248,7 @@ function obGo(i){
   obI=Math.max(0,Math.min(2,i));
   obPages.style.transform="translateX(-"+(obI*100)+"%)";
   obDots.querySelectorAll("i").forEach(function(d,k){d.classList.toggle("on",k===obI)});
-  obBack.style.visibility=obI===0?"hidden":"visible";
+  obBack.style.display=obI===0?"none":"";
   obNext.textContent=obI===2?"Begin learning":"Continue";
 }
 if(obNext){ obNext.addEventListener("click",function(){obGo(obI===2?0:obI+1)});
